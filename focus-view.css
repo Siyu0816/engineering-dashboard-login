@@ -1,0 +1,34 @@
+/* Expanded charts retain native geometry instead of filling a fixed-height canvas. */
+dialog.portal-focus { max-width:calc(100vw - 32px); max-height:90vh; max-height:90dvh; margin:auto; padding:0; overflow:auto; border:1px solid #ded8e9; border-radius:16px; background:#fff; box-shadow:0 24px 90px #24163640; }
+.portal-focus .portal-focus-header { position:sticky; top:0; z-index:3; display:flex; align-items:center; gap:20px; padding:20px 24px 14px; background:#fff; border-bottom:1px solid #efecf4; }
+.portal-focus-header>div { min-width:0; }
+.portal-focus .portal-focus-header h2 { margin:5px 0 0; font-size:21px; line-height:1.5; overflow-wrap:anywhere; color:#47385d; }
+.portal-focus .portal-overline { font-size:10px; letter-spacing:.1em; color:#847294; }
+.portal-focus .portal-focus-close { display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px; padding:0; margin-left:auto; border:1px solid #ded7e9; border-radius:12px; background:#f7f5fb; color:#66507e; cursor:pointer; box-shadow:none; transition:background .15s,border-color .15s; }
+.portal-focus-close svg { display:block; width:20px; height:20px; pointer-events:none; }
+.portal-focus .portal-focus-close:hover { background:#eee8f6; border-color:#bba9d1; color:#403052; }
+.portal-focus .portal-focus-close:focus { outline:none; }
+.portal-focus .portal-focus-close:focus-visible { outline:2px solid #79609c; outline-offset:3px; }
+.portal-focus .portal-focus-note { padding:12px 24px 0; font-size:12px; line-height:1.6; color:#84768e; }
+.portal-focus .portal-focus-content { display:block; width:100%; max-width:var(--focus-content-width,100%); margin-inline:auto; padding:20px; overflow:visible; box-sizing:border-box; }
+.portal-focus .portal-focus-content .chart { width:100%!important; max-width:var(--focus-chart-width,100%)!important; min-width:0!important; height:auto!important; min-height:0!important; max-height:none!important; flex:none!important; margin-inline:auto; box-sizing:border-box; }
+.portal-focus .portal-focus-content .chart svg { display:block; width:100%!important; max-width:100%!important; min-width:0!important; height:auto!important; min-height:0!important; max-height:none!important; aspect-ratio:var(--focus-svg-ratio,auto); }
+.portal-focus .portal-focus-content .approval-visual,
+.portal-focus .portal-focus-content .distribution-visual { width:100%; max-width:310px; min-width:0; justify-self:center; }
+.portal-focus .portal-focus-content .approval-details,
+.portal-focus .portal-focus-content .distribution-details { width:auto; min-width:0; }
+.portal-focus-content [data-focus-source-id=capex-plan-ungr-gauge] { justify-content:center; }
+.portal-focus .portal-focus-content .table-wrap { width:100%; min-width:0!important; max-width:100%; height:auto!important; max-height:none!important; margin:0; overflow:auto!important; }
+.portal-focus .portal-focus-content th { position:static!important; }
+.portal-focus .portal-focus-content .daily-summary-single { width:100%; table-layout:fixed; border-collapse:collapse; }
+.portal-focus-content .daily-summary-single th,.portal-focus-content .daily-summary-single td { text-align:center; padding:9px 5px; white-space:normal; border-bottom:1px solid #eee8f4; }
+.portal-focus-content .daily-month-band th { background:#f6f1fa; text-align:left; }
+.portal-focus-content .focus-month-heading { display:block; padding:6px; font-weight:600; }
+@media(max-width:760px) {
+  dialog.portal-focus { max-width:calc(100vw - 20px); max-height:94vh; max-height:94dvh; border-radius:12px; }
+  .portal-focus .portal-focus-header { padding:14px 16px 12px; gap:12px; }
+  .portal-focus .portal-focus-header h2 { font-size:18px; }
+  .portal-focus .portal-focus-note { padding:10px 16px 0; font-size:11px; }
+  .portal-focus .portal-focus-content { padding:16px 10px; }
+}
+@media(prefers-reduced-motion:reduce) { .portal-focus .portal-focus-close { transition:none; } }

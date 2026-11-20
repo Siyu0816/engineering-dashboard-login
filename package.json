@@ -1,0 +1,11 @@
+{
+  "name": "engineering-enterprise-portal",
+  "version": "14.0.0",
+  "private": true,
+  "description": "Engineering operations portal with local enterprise account service",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node tests/auth-server.mjs && node tests/year-filters.cjs && node tests/report-behavior.cjs && node tests/focus-behavior.cjs"
+  }
+}

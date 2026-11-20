@@ -1,0 +1,62 @@
+/* V8 — stronger ink, distinct data hues, and visible chart boundaries. */
+:root{--ink:#27243a;--muted:#66657a;--domain:#5b3b92;--domain-soft:#f0ebf8;--line:#dce0e9;--page:#f4f5f9}
+body{color:var(--ink)}
+.card-header h2,.portal-report-link strong,.v3-module-title,.portal-related-heading h2{color:#332849}
+.card-header p,.chart-unit,.chart-legend,.legend-item,.kpi-label,.kpi-foot,.filter-control,.currency-rate-label,.portal-report-identity strong,.portal-report-identity small,.portal-guide p,.portal-source-pill,.portal-report-foot{color:#66657a}
+.kpi-value{color:#4b2e7d}.kpi-value.positive{color:#197150}.kpi-value.negative{color:#b83255}
+.kpi-card,.chart-card{border-color:#dce0e9}.chart-card:hover{border-color:#ad9ac8}
+.portal-primary>button,.portal-rail button,.portal-lang,.portal-search-open{color:#575267}
+.portal-primary>button:is(.selected,[aria-expanded=true]),.portal-rail button[aria-current]{color:#51317f}
+.portal-primary>button:after{background:#684398}
+.portal-rail-label,.portal-overline,.portal-link-code,.portal-mega small,.portal-mega-footer,.portal-menu-footer,.portal-menu-footer small{color:#6c637c}
+.portal-report-link small,.portal-related-heading p,.portal-guide strong{color:#5e566e}
+.portal-report-link.is-current{background:#f0ebf8;border-color:#987eb9}
+.portal-card-tools button,.portal-report-actions button,.visual-detail-button,.reset-button,.currency-toggle,.portal-mobile-toggle,.daily-summary-actions button{color:#604085;border-color:#d4c7e2}
+.portal-card-tools button:hover,.portal-report-actions button:hover,.daily-summary-actions button:hover{color:#44276a;background:#ebe2f5;border-color:#a78bbf}
+.portal-guide{border-color:#d9cde7}.portal-source-pill{background:#fff9;border-color:#cbbbda}
+.multi-picker-trigger,.multi-picker-option{color:#42394f}.search-input,.portal-search-field input{color:#332849}
+.search-input::placeholder,.portal-search-field input::placeholder{color:#746a81;opacity:1}
+.breadcrumb strong,.breadcrumb>span:first-child:after{color:#685c77}
+.page-heading .eyebrow,.page-heading p:not(.eyebrow){color:#e4dcea}.page-heading .period-chip{color:#f4edf9}
+.portal-mobile-home,.portal-mobile-nav summary{color:#4b306c}.portal-mobile-nav summary>span{color:#756383}
+.portal-search-meta,.portal-search-foot,.portal-search-empty,.portal-focus-note,.portal-related-heading .portal-overline{color:#6a5f78}
+.v3-overline,.v3-modules-heading p,.v3-module-top,.v3-module-description,.v3-module-bottom,.v3-home-copy p,.v3-home-footer{color:#696174}
+.v3-home-copy em{color:#63408f}.v3-home-copy h2{color:#4d3b61}.v3-home-explore{color:#523374;border-color:#b4a1c8}
+.v3-module{--module:#63408f}.v3-module[data-category=maintenance]{--module:#216e89}.v3-module[data-category=capex]{--module:#9a6015}.v3-module[data-category=energy]{--module:#247458}
+.table-wrap td,.table-wrap .data-table td{color:#484153;border-bottom-color:#e8e9ef}
+.table-wrap thead th,.table-sort-button{color:#514066;background-color:#eee9f5}
+.table-wrap .data-table tbody tr:nth-child(even){background:#fafafd}.table-wrap .data-table tbody tr:hover{background:#f0edf7}
+.table-wrap .total-row td,.capex-plan-total-row td{color:#44305f;background:#eae5f3}
+.status-active{background:#e5f2ec;color:#196647}.status-expiring{background:#fff0d8;color:#87510b}.status-expired{background:#fbe8ee;color:#a52949}
+.capex-overdue-value{background:#fff1e2;color:#8a4d10}
+#breakdown-table tbody td:before,.capex-plan-table .data-table tbody td:before{color:#6c6079}
+#daily-schedule-table .daily-summary-single thead th{background:#eae5f3;color:#4c3669;border-bottom-color:#cfc1df}
+#daily-schedule-table .daily-summary-single tbody td{color:#484153}
+#daily-schedule-table .daily-summary-single tbody th{color:#61516f}
+#daily-schedule-table .daily-summary-single .daily-month-band th{background:#eee8f7;color:#533474;border-color:#d7c9e5}
+#daily-schedule-table .daily-total-cell{background:#efeaf8;color:#4d2c7b!important}
+#daily-schedule-table .daily-rate-cell{color:#176d78!important}.daily-month-arrow{color:#5b3b92;border-color:#bca6d0}
+.cmp-summary,.cmp-hint,.cmp-legend>span,.monthly-legend,.cmp-mode button{color:#61576e}
+.cmp-summary.is-over{color:#ad284b}.cmp-mode{background:#eee9f5;border-color:#d8cce5}
+.cmp-mode button[aria-pressed=true]{color:#51317f;box-shadow:0 1px 5px #3420471f;font-weight:600}
+.cmp-legend .budget{background:#b3c0dc;border-color:#65789c}.cmp-legend .actual{background:#5b3b92}.cmp-legend .over{background:#b83255}
+.cmp-legend i.rate{background:#9a6015}
+.cmp-svg .cmp-tick,.monthly-axis{fill:#646174}.cmp-svg .cmp-category{fill:#463851}
+.comparison-chart .cmp-rate-heading,.comparison-chart .cmp-rate-value{fill:#8d570c}
+.cmp-interactive:hover rect{opacity:.92}.cmp-interactive:focus-visible rect{stroke:#243247;stroke-width:2}
+.chart .svg-grid-line{stroke:#dfe3ed}.chart .svg-chart text:not([fill]){fill:#625c70}
+.chart .svg-chart .svg-category{fill:#50475e}.chart .svg-chart .svg-value:not([fill]){fill:#494052}
+.chart .svg-chart .svg-axis-title{fill:#5d526c}.chart .svg-bar:hover{filter:brightness(1.08)}
+.monthly-value{fill:#4d317b}.monthly-point:focus circle{stroke:#9b7fbd}
+.monthly-legend i{border-color:#5b3b92}.monthly-legend i.budget{border-color:#a86613}
+.approval-percent,.distribution-total{fill:#4c2c7b}.approval-caption,.distribution-caption{fill:#686075}
+.approval-amount>span,.approval-note,.distribution-label,.distribution-values small,.distribution-values>small{color:#666074}
+.approval-amount>strong,.distribution-values strong,.distribution-values>strong{color:#462b6d}
+.approval-amount.over>strong{color:#b83255}
+#capex-plan-ungr-gauge .capex-plan-gauge-value{fill:#4c2c7b!important}
+#capex-plan-ungr-gauge .capex-plan-gauge-ratio{fill:#51317f}
+#capex-plan-ungr-gauge .capex-plan-gauge-caption{fill:#666074}
+.chart .svg-chart .capex-plan-segment-label-act,.chart .svg-chart .capex-plan-segment-label-ytd{fill:#fff!important;stroke:none;font-weight:600}
+.chart .svg-chart .capex-plan-total-label{fill:#8d570c!important;stroke:#fff;stroke-width:3px;paint-order:stroke;font-weight:600}
+.chart-tooltip{background:#2e2342;color:#fff;border-color:#80659f;box-shadow:0 10px 30px #21142f30}
+.exp-back-top{color:#5b3b92;border-color:#c2afd5}

@@ -1,0 +1,50 @@
+/* V9: colors from the first complete edition, applied to the current layout. */
+:root{--page:#f5f6fa;--surface:#fff;--ink:#252640;--muted:#697087;--faint:#8d93a5;--line:#e3e6ee;--nav:#262653;--nav-muted:#d5d7eb;--teal:#5b58b7;--blue:#7773ce;--gold:#c99a45;--violet:#8d78d4;--red:#df4658;--domain:#5140a0;--domain-soft:#f0ebf6}
+body{color:var(--ink);background:var(--page)}
+body[data-view=home]{background:#faf9f6;color:#252334}
+.portal-primary>button,.portal-rail button,.portal-lang,.portal-search-open{color:#6e6b7d}
+.portal-primary>button:is(.selected,[aria-expanded=true]),.portal-rail button[aria-current]{color:#5140a0}
+.portal-primary>button:after{background:#5140a0}
+.portal-rail-label,.portal-link-code,.portal-overline,.portal-report-identity strong,.portal-report-identity small{color:#72628f}
+.portal-report-link strong,.card-header h2,.portal-related-heading h2{color:#252640}
+.portal-report-link small,.portal-related-heading p,.portal-guide p,.portal-source-pill{color:#697087}
+.portal-report-link.is-current{background:#f0ebf6;border-color:#cfc3e1}
+.portal-guide strong,.portal-mobile-home,.portal-mobile-nav summary{color:#5140a0}
+.portal-card-tools button,.portal-report-actions button,.currency-toggle,.reset-button,.portal-mobile-toggle,.daily-summary-actions button{color:#5140a0;border-color:#d7d1df}
+.multi-picker-trigger,.multi-picker-option,.search-input{color:#252640}
+.filter-control,.currency-rate-label,.card-header p,.chart-unit,.chart-legend,.legend-item,.portal-report-foot{color:#697087}
+.card,.kpi-card{border-color:#e3e6ee}
+.kpi-label{color:#617481}.kpi-value{color:#252640}.kpi-foot{color:#8d93a5}
+.kpi-value.positive{color:#24945a}.kpi-value.negative{color:#df4658}
+body:not([data-view=home]) .page-heading{background:#fff;color:#252640;border-color:#e3e6ee}
+body:not([data-view=home]) .page-heading .eyebrow{color:#5755a9}
+body:not([data-view=home]) .page-heading p:not(.eyebrow){color:#697087}
+body:not([data-view=home]) .page-heading .period-chip{background:#fff;color:#5d6578;border-color:#e3e6ee}
+.page-heading .period-dot{background:#c99a45}
+.v3-home-copy em,.v3-home-explore{color:#5140a0}.v3-home-copy h2{color:#292042}
+.v3-home-copy p,.v3-module-description,.v3-modules-heading p,.v3-home-footer{color:#6e6b7d}
+.v3-module-title{color:#252334}.v3-overline,.v3-module-top,.v3-module-bottom{color:#72628f}
+.v3-module{--module:#5140a0}.v3-module[data-category=maintenance]{--module:#637baf}.v3-module[data-category=capex]{--module:#b39264}.v3-module[data-category=energy]{--module:#6e958b}
+.table-wrap td,.table-wrap .data-table td{color:#46506a}
+.table-wrap thead th,.table-sort-button{color:#5d627b;background-color:#f4f5fa}
+.table-wrap .total-row td{color:#252640;background:#f0f1f8}
+#daily-schedule-table .daily-summary-single thead th{color:#5d627b;background:#f4f5fa}
+#daily-schedule-table .daily-summary-single tbody td{color:#46506a}
+#daily-schedule-table .daily-summary-single tbody th{color:#697087}
+#daily-schedule-table .daily-summary-single .daily-month-band th{background:#f0edf7;color:#5140a0}
+#daily-schedule-table .daily-total-cell{background:#f4f3fa;color:#292777}
+#daily-schedule-table .daily-rate-cell{color:#697087}
+.cmp-summary,.cmp-legend>span,.monthly-legend{color:#697087}.cmp-summary.is-over{color:#df4658}
+.cmp-mode button{color:#697087}.cmp-mode button[aria-pressed=true]{color:#5140a0}
+.cmp-legend .budget{background:#e7e9f4;border-color:#c5cce9}.cmp-legend .actual{background:#11117a}.cmp-legend .over{background:#df4658}.cmp-legend i.rate{background:#e3ad00}
+.cmp-svg .cmp-tick,.monthly-axis{fill:#768894}.cmp-svg .cmp-category{fill:#697087}.cmp-hint{color:#8d93a5}
+.comparison-chart .cmp-rate-heading,.comparison-chart .cmp-rate-value{fill:#c99a45}
+.monthly-value{fill:#11117a}.monthly-legend i{border-color:#11117a}.monthly-legend i.budget{border-color:#c5cce9}
+.chart .svg-grid-line{stroke:#e9eaf2}
+.approval-percent,.distribution-total{fill:#171276}.approval-caption,.distribution-caption{fill:#697087}
+.approval-amount>span,.approval-note,.distribution-label,.distribution-values small,.distribution-values>small{color:#697087}
+.approval-amount>strong,.distribution-values strong,.distribution-values>strong{color:#171276}.approval-amount.over>strong{color:#df4658}
+#capex-plan-ungr-gauge .capex-plan-gauge-value{fill:#171276!important}
+#capex-plan-ungr-gauge .capex-plan-gauge-ratio{fill:#171276}
+#capex-plan-ungr-gauge .capex-plan-gauge-caption{fill:#697087}
+.chart-tooltip{background:#292042;color:#fff;border-color:#5140a0}

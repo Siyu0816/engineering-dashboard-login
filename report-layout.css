@@ -1,0 +1,63 @@
+/* Complete comparisons, one continuous daily summary and larger CAPEX compositions. */
+.overview-grid,.area-dashboard-grid{grid-template-columns:minmax(0,1fr)!important;gap:22px}
+.overview-grid>.chart-card,.area-dashboard-grid>.chart-card{grid-column:1/-1!important}
+.comparison-chart .cmp-scroll{overflow:visible!important;border:0;padding:0;max-width:100%}
+.comparison-chart .cmp-svg{width:100%!important;max-width:100%!important;min-width:0!important;height:auto!important;margin-bottom:10px}
+.comparison-chart .cmp-svg .cmp-bar-value,.comparison-chart .cmp-svg .cmp-delta{font-size:11px}
+.comparison-chart .cmp-rate-heading{font-size:12px;fill:#aa8b5e;font-weight:500}
+.comparison-chart .cmp-rate-value{font-size:12px;fill:#ac8955;font-weight:550}
+.cmp-legend i.rate{height:2px;width:16px;background:#b7955f;border-radius:0}
+.cmp-hint{font-size:11px}.cmp-mode button{font-size:12px}.comparison-chart .cmp-extra{display:none}
+.capex-plan-layout{grid-template-columns:minmax(230px,.72fr) minmax(0,2.28fr)!important;gap:20px;align-items:stretch}
+.capex-plan-gauge-card{grid-column:1!important;grid-row:1}.capex-plan-trend-card{grid-column:2!important;grid-row:1}
+.capex-plan-table-card{grid-column:1/-1!important;grid-row:2}
+.capex-plan-trend{height:340px!important;min-width:0!important}.capex-plan-gauge{height:340px!important}
+.capex-plan-legend{display:flex;flex-wrap:wrap;gap:14px;padding:0 20px 6px;font-size:11px}.capex-plan-legend .legend-item{display:inline-flex;gap:6px}
+#capex-plan-ungr-gauge svg>path:first-of-type{stroke:#e8e1ef}#capex-plan-ungr-gauge svg>path:nth-of-type(2){stroke:#8b6aa5}
+.capex-plan-layout .capex-plan-table{height:auto!important;max-height:none!important;overflow:visible!important}
+.capex-plan-table .data-table{width:100%;min-width:0!important;table-layout:fixed;white-space:normal}
+.capex-plan-table th,.capex-plan-table td{white-space:normal;overflow-wrap:anywhere;vertical-align:top}
+.capex-plan-table th:nth-child(3){width:30%}.capex-plan-table th:nth-child(5){width:17%}
+.capex-plan-total-row td{position:static!important}
+#view-workOrder .work-order-grid{grid-template-columns:minmax(0,1fr)!important;gap:23px}
+#view-workOrder .work-order-grid>.chart-card{grid-column:1/-1!important}
+#view-workOrder .work-order-grid .chart{height:350px!important}
+#daily-schedule-table{height:auto!important;max-height:none!important;overflow:visible!important;border:0;padding:0}
+.daily-month{margin:0 0 32px}.daily-month>h3{font-size:18px;font-weight:500;color:#76528e;margin:0 0 15px;letter-spacing:-.02em}
+.daily-week-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.daily-week{border:1px solid #e9dff0;border-radius:8px;min-width:0;background:#fefcff}
+.daily-week-title{padding:11px 13px;border-bottom:1px solid #e9dff0;background:#f6effb;color:#9a7cac;font-size:11px}
+.daily-week .data-table{table-layout:fixed;width:100%;min-width:0;white-space:normal}
+.daily-week .data-table th,.daily-week .data-table td{position:static!important;white-space:normal;overflow-wrap:anywhere;padding:9px 3px;text-align:center;font-size:11px;line-height:1.6;font-variant-numeric:tabular-nums}
+.daily-week .data-table th:first-child{width:85px;text-align:left;padding-left:10px;font-size:10px;color:#9c7eac}
+.daily-week .data-table tbody th{font-weight:400;background:#fbf8fe}.daily-week .data-table thead th{font-size:10px;background:#fbf7fe}
+.daily-week .daily-total td,.daily-week .daily-total th{background:#f4ecfa!important;font-weight:550}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+#capex-budget-gauge.approval-comparison{height:auto!important;min-height:280px;padding:22px;display:flex;align-items:center;gap:25px}
+.approval-visual{width:43%;max-width:250px;min-width:160px}.approval-visual svg{display:block;width:100%;height:auto}
+.approval-percent{font-size:31px;font-weight:550;fill:#7f5d95;font-family:"Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:-1px}
+.approval-caption{font-size:11px;fill:#b09abb}.approval-details{flex:1;min-width:0}.approval-amount{padding:14px 0;border-bottom:1px solid #eee5f3;display:flex;flex-direction:column;gap:7px}
+.approval-amount>span{font-size:11px;color:#af96be}.approval-amount>strong{font-size:23px;font-weight:500;letter-spacing:-.03em;color:#87639f;font-variant-numeric:tabular-nums}
+.approval-amount.over>strong{color:#bc7184}.approval-note{font-size:10px;line-height:1.8;color:#b8a1c5;margin:13px 0 0}
+.capex-project-chart{min-width:0!important;max-width:100%}.capex-project-card{overflow:hidden!important}
+.portal-focus-content .comparison-chart{min-width:0!important}.portal-focus-content .chart .cmp-svg{height:auto!important;min-width:0!important}
+.daily-summary-card{overflow:visible}
+#daily-schedule-table .daily-summary-single{width:100%;min-width:0;table-layout:fixed;white-space:normal;border-collapse:separate;border-spacing:0;border:1px solid #e8ddee;border-radius:9px}
+#daily-schedule-table .daily-summary-single thead th{position:sticky;top:calc(var(--portal-header) + 55px);z-index:13;background:#f3eaf9;border-bottom:1px solid #decee9;padding:13px 10px;font-size:12px;white-space:normal;text-align:center;line-height:1.6;overflow-wrap:break-word}
+#daily-schedule-table .daily-summary-single tbody td,#daily-schedule-table .daily-summary-single tbody th{position:static;padding:10px;font-size:12px;line-height:1.6;text-align:center;white-space:normal;border-bottom:1px solid #f0e8f5;font-variant-numeric:tabular-nums}
+#daily-schedule-table .daily-summary-single tbody th{font-weight:400;color:#9e80b1;background:#fcf9fe}
+#daily-schedule-table .daily-summary-single .daily-month-band th{font-size:14px;font-weight:550;text-align:left;padding:14px 18px;background:#f6effa;border-top:1px solid #e6d8ef;border-bottom:1px solid #e6d8ef;color:#8e6aA5}
+#daily-schedule-table .daily-total-cell{background:#faf5fd;color:#9370a9;font-weight:550}
+#daily-schedule-table .daily-rate-cell{color:#9a7bad}
+#capex-distribution-chart.capex-distribution-expanded{height:auto!important;min-height:350px;padding:22px!important;display:flex;align-items:center;gap:24px;justify-content:space-between}
+.distribution-visual{width:46%;max-width:260px;min-width:180px;flex-shrink:0}.distribution-visual svg{display:block;width:100%;height:auto}
+.distribution-total{font-size:28px;font-weight:550;fill:#7f5b96;font-family:"Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:-.8px}.distribution-caption{font-size:12px;fill:#b19ac0}
+.distribution-details{flex:1;min-width:0}.distribution-item{display:flex;gap:12px;align-items:flex-start;padding:15px 0;border-bottom:1px solid #eee5f3}.distribution-item:last-child{border-bottom:0}
+.distribution-item>i{width:11px;height:11px;border-radius:3px;flex-shrink:0;margin-top:5px}.distribution-item>div{min-width:0;flex:1}
+.distribution-label{font-size:13px;line-height:1.6;color:#9c80af}.distribution-values{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:5px}
+.distribution-values strong{font-size:24px;font-weight:550;letter-spacing:-.035em;line-height:1.4;color:#806096;font-variant-numeric:tabular-nums}.distribution-values small{font-size:12px;color:#b49dc3;font-variant-numeric:tabular-nums}
+.distribution-details{width:100%}
+.distribution-values>strong{font-size:24px;font-weight:550;letter-spacing:-.04em;color:#7f5c96;line-height:1.4;font-variant-numeric:tabular-nums}.distribution-values>small{font-size:12px;color:#b49ac2;white-space:nowrap}
+@media(max-width:900px){.capex-plan-layout{grid-template-columns:minmax(0,1fr)!important}.capex-plan-gauge-card{grid-column:1!important;grid-row:1}.capex-plan-trend-card{grid-column:1!important;grid-row:2}.capex-plan-table-card{grid-column:1!important;grid-row:3}.daily-week-grid{grid-template-columns:minmax(0,1fr)}.capex-plan-gauge{height:270px!important}}
+@media(max-width:760px){.comparison-chart .cmp-svg .cmp-bar-value,.comparison-chart .cmp-svg .cmp-delta{font-size:10px}.cmp-summary{font-size:11px}.cmp-mode button{font-size:11px}.cmp-hint{font-size:10px}.overview-grid,.area-dashboard-grid{gap:18px}.daily-month>h3{font-size:16px}.daily-week-grid{gap:13px}.daily-week .data-table th,.daily-week .data-table td{font-size:9px;padding:8px 2px}.daily-week .data-table th:first-child{width:65px;padding-left:7px;font-size:9px}.daily-week-title{padding:10px 11px;font-size:10px}.capex-plan-table .data-table thead{display:none}.capex-plan-table .data-table,.capex-plan-table .data-table tbody{display:block}.capex-plan-table .data-table tbody tr{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e8d9f0;border-radius:8px;margin:0 0 12px;padding:10px 4px;background:#fff}.capex-plan-table .data-table td{display:block;border:0;padding:8px 9px;font-size:11px;white-space:normal;text-align:left}.capex-plan-table .data-table tbody td:before{display:block;content:attr(data-label);font-size:9px;color:#b195c0;margin-bottom:4px}.capex-plan-table .data-table tbody td:nth-child(3){grid-column:1/-1}.capex-plan-table tfoot{display:block}.capex-plan-table tfoot tr{display:flex;gap:10px;align-items:center;flex-wrap:wrap}#view-workOrder .work-order-grid .chart{height:330px!important}#capex-budget-gauge.approval-comparison{gap:20px;padding:15px}.approval-visual{min-width:135px}.approval-amount{padding:10px 0}.approval-amount>strong{font-size:20px}.approval-amount>span{font-size:10px}.approval-note{font-size:9px}.approval-percent{font-size:28px}}
+@media(max-width:760px){#daily-schedule-table .daily-summary-single thead th{top:calc(var(--portal-header) + 51px);font-size:10px;padding:10px 2px}#daily-schedule-table .daily-summary-single tbody td,#daily-schedule-table .daily-summary-single tbody th{font-size:10px;padding:8px 2px}#daily-schedule-table .daily-summary-single .daily-month-band th{font-size:12px;padding:12px 10px}#capex-distribution-chart.capex-distribution-expanded{flex-direction:column;gap:10px;padding:15px!important}.distribution-visual{width:220px;min-width:0;max-width:85%}.distribution-details{width:100%}.distribution-item{padding:13px 0;gap:10px}.distribution-item>div{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px}.distribution-values{margin:0;gap:8px}.distribution-values strong{font-size:21px}.distribution-values small{font-size:11px}.distribution-label{font-size:12px}}

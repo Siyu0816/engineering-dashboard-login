@@ -1,0 +1,71 @@
+/* Refined report density and complete, single-plot mobile charts. */
+.portal-mobile-toggle{display:none}
+.portal-mobile-nav{display:none}
+.monthly-line-chart{height:auto!important;min-width:0;padding:18px!important}
+.monthly-legend{display:flex;gap:22px;flex-wrap:wrap;font-size:12px;color:#8b749f;padding:2px 0 14px}
+.monthly-legend span{display:inline-flex;gap:8px;align-items:center}
+.monthly-legend i{display:inline-block;width:19px;border-top:3px solid #775a98}
+.monthly-legend i.budget{border-color:#b69a70;border-top-style:dashed}
+.monthly-cost-svg{display:block;width:100%;height:auto;overflow:visible}
+.monthly-axis{font-size:11px;fill:#a08ab1}
+.monthly-value{font-size:11px;fill:#876b9c;font-variant-numeric:tabular-nums}
+.monthly-point{cursor:pointer;outline:none}.monthly-point:focus circle{stroke:#c5b2d7;stroke-width:5}
+#breakdown-equipment-chart{height:740px!important;min-width:0}
+#breakdown-equipment-chart .svg-category{font-size:10px}
+#breakdown-trend-chart{height:420px!important}
+#breakdown-table{height:auto!important;max-height:none!important;overflow:visible!important}
+#breakdown-table .data-table{width:100%;min-width:0!important;table-layout:fixed;white-space:normal}
+#breakdown-table th,#breakdown-table td{white-space:normal;overflow-wrap:anywhere;vertical-align:top;font-size:11px;line-height:1.8;padding:12px 9px}
+#breakdown-table th:nth-child(1),#breakdown-table th:nth-child(2){width:5%}
+#breakdown-table th:nth-child(3){width:10%}
+#breakdown-table th:nth-child(4){width:25%}
+#breakdown-table th:nth-child(5){width:19%}
+#breakdown-table th:nth-child(6){width:16%}
+#breakdown-table th:nth-child(7){width:8%}
+#breakdown-table th:nth-child(8){width:12%}
+.capex-project-chart{height:620px!important}
+.capex-plan-gauge{height:300px!important;display:flex;align-items:center;justify-content:center}
+.capex-plan-gauge svg{display:block;max-width:100%}
+.capex-plan-gauge-value{fill:#78568f;font-weight:550;letter-spacing:-.03em}
+.capex-plan-gauge-card{display:flex;flex-direction:column}
+.capex-plan-gauge-card .card-header{flex-shrink:0}
+.capex-plan-gauge-card .capex-plan-gauge{flex:1}
+.daily-summary-actions{display:flex;justify-content:flex-end;gap:8px;margin:0 0 12px}
+.daily-summary-actions button{border:1px solid #e2d5ec;border-radius:6px;padding:7px 12px;background:#faf6fd;color:#9271a6;font:inherit;font-size:11px;cursor:pointer}
+.daily-summary-actions button:hover{background:#f1e7f8;border-color:#c4add6}
+.daily-month-toggle{display:flex;align-items:center;gap:12px;width:100%;border:0;padding:2px 0;background:transparent;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.daily-month-arrow{display:grid;place-items:center;width:23px;height:23px;border:1px solid #dac9e7;border-radius:6px;font-size:20px;line-height:1;transition:transform .2s;background:#fffcff}
+.daily-month-toggle[aria-expanded=true] .daily-month-arrow{transform:rotate(90deg)}
+.daily-month-toggle:focus-visible{outline:2px solid #ac8fc5;outline-offset:5px;border-radius:3px}
+@media(max-width:760px){
+  :root{--portal-header:72px}
+  .portal-header-main{height:72px!important;min-height:0!important;display:flex!important;flex-wrap:nowrap!important;gap:12px;width:calc(100% - 32px);padding:0!important}
+  .portal-brand{gap:8px}.portal-brand>span{font-size:21px}.portal-brand img{width:27px;height:32px}.portal-brand small{font-size:6px;letter-spacing:.11em;margin-top:6px}
+  .portal-primary,.portal-rail{display:none!important}
+  .portal-utilities{margin-left:auto;gap:14px!important}.portal-avatar{display:none}
+  .portal-search-open{padding:7px!important;background:transparent;border:0}.portal-search-open>span:not(.portal-search-icon),.portal-search-open kbd{display:none!important}
+  .portal-lang{font-size:11px}.portal-mobile-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;width:34px;height:36px;border:1px solid #e5d9ee;border-radius:7px;background:#faf6fd;color:#89679f;cursor:pointer;flex-shrink:0}
+  .portal-mobile-toggle i{display:block;width:15px;height:1.5px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
+  .portal-mobile-toggle[aria-expanded=true] i:nth-child(1){transform:translateY(5.5px) rotate(45deg)}.portal-mobile-toggle[aria-expanded=true] i:nth-child(2){opacity:0}.portal-mobile-toggle[aria-expanded=true] i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+  .portal-mobile-nav{display:block;position:fixed;top:82px;right:16px;width:calc(100% - 32px);max-width:420px;max-height:calc(100svh - 100px);overflow:auto;background:#fffdff;border:1px solid #e4d7ee;border-radius:14px;padding:10px;box-shadow:0 24px 55px #38244726}
+  .portal-mobile-home,.portal-mobile-nav summary{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 14px;border:0;background:transparent;text-align:left;font:inherit;font-size:14px;font-weight:550;color:#805d98;cursor:pointer;list-style:none}
+  .portal-mobile-nav summary::-webkit-details-marker{display:none}.portal-mobile-nav summary>span{transition:rotate .2s;color:#ae94bf}.portal-mobile-nav details[open]>summary>span{rotate:180deg}
+  .portal-mobile-nav details{border-top:1px solid #efe6f5}.portal-mobile-nav details>div{display:grid;gap:7px;padding:0 7px 12px}
+  .portal-mobile-nav .portal-report-link{padding:12px 14px;border-radius:8px}.portal-mobile-nav .portal-link-code{font-size:8px;margin-bottom:4px}.portal-mobile-nav .portal-report-link strong{font-size:13px}
+  .portal-report-toolbar{top:72px}.cmp-compact .cmp-tick{font-size:9px}.comparison-chart.cmp-compact .cmp-category{font-size:9px}
+  .comparison-chart.cmp-compact .cmp-bar-value,.comparison-chart.cmp-compact .cmp-delta{font-size:9px}
+  .monthly-line-chart{padding:12px 4px!important}.monthly-axis{font-size:9px}.monthly-legend{font-size:11px;gap:16px}
+  #breakdown-equipment-chart{height:680px!important}#breakdown-equipment-chart .svg-category{font-size:8px}
+  #breakdown-table .data-table{display:block;border:0}#breakdown-table thead{display:none}
+  #breakdown-table tbody{display:grid;gap:12px}#breakdown-table tbody tr{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e8ddee;border-radius:9px;padding:9px;background:#fff}
+  #breakdown-table tbody td{display:block;width:auto!important;border:0;padding:7px 8px;font-size:11px}
+  #breakdown-table tbody td:before{content:attr(data-label);display:block;color:#b099bd;font-size:10px;margin-bottom:3px}
+  #breakdown-table tbody td:nth-child(4),#breakdown-table tbody td:nth-child(5),#breakdown-table tbody td:nth-child(6),#breakdown-table tbody td:nth-child(8){grid-column:1/-1}
+  #daily-schedule-table .daily-summary-single thead th{top:72px;font-size:10px;padding:10px 3px}
+  #daily-schedule-table .daily-summary-single tbody td,#daily-schedule-table .daily-summary-single tbody th{font-size:10px;padding:9px 3px}
+  #daily-schedule-table .daily-summary-single .daily-month-band th{padding:12px;font-size:12px}
+  .capex-project-chart{height:550px!important}.capex-plan-gauge{height:240px!important;flex:auto!important}
+}
+.capex-plan-gauge-value{fill:#78568f!important;font-size:28px!important;font-weight:550!important}.capex-plan-gauge-caption{font-size:11px;fill:#a38bb4}.capex-plan-gauge-ratio{font-size:23px;font-weight:500;fill:#8e6ca4;font-variant-numeric:tabular-nums}
+
+#capex-plan-ungr-gauge .capex-plan-gauge-ratio{font-size:23px;fill:#8e6ca4;font-weight:500}#capex-plan-ungr-gauge .capex-plan-gauge-caption{font-size:11px;fill:#a38bb4}
