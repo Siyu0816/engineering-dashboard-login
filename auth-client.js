@@ -14,16 +14,28 @@
     if (inflight) return inflight;
     inflight = (async () => {
       if (!window.sb) throw new Error('Supabase 尚未初始化，请检查项目配置。');
-      const { data, error } = await window.sb.auth.getUser();
-      // if (error) throw error;
-      if (!data.user) {
+      // const { data } = await window.sb.auth.getUser();
+      // // if (error) throw error;
+      // if (!data.user) {
+      //   redirect();
+      //   throw new Error('请先登录。');
+      // }
+      const {
+        data: { session }
+      } = await window.sb.auth.getSession();
+
+      if (!session) {
+
         redirect();
-        throw new Error('请先登录。');
+
+        return;
       }
+
+      const user = session.user;
       const { data: profile } = await window.sb
           .from('users')
           .select('*')
-          .eq('id', data.user.id)
+          .eq('id', user.id)
           .single();
 
         if (!profile) {
@@ -48,12 +60,12 @@
           throw new Error('等待审批');
         }
 
-      const metadata = data.user.user_metadata || {};
+      const metadata = user.user_metadata || {};
       current = {
         user: {
-          id: data.user.id,
-          email: data.user.email || '',
-          name: metadata.full_name || metadata.name || data.user.email || '用户',
+          id: user.id,
+          email: user.email || '',
+          name: metadata.full_name || metadata.name || user.email || '用户',
           role: metadata.role || 'member'
         }
       };
