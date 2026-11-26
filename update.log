@@ -43,3 +43,18 @@ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. If you want to integrate the remote changes,
 hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+======================================== 
+Thu 11/26/2026 16:18:51.84 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
