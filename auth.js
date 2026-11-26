@@ -154,7 +154,7 @@
 
         if (data.user) {
 
-          await client
+          const result = await client
             .from('users')
             .insert({
               id: data.user.id,
@@ -165,6 +165,10 @@
               status: 'pending'
             });
 
+          console.log(
+              'USER INSERT RESULT:',
+              result
+          );
         }
 
         /* 新增结束 */
