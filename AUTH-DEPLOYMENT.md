@@ -1,44 +1,28 @@
-# 企业账户版：运行与部署说明
+# Supabase 登录与静态部署
 
-## 运行架构
+## 部署
 
-这是包含实际服务端的本地可运行企业门户，不是用浏览器缓存模拟的登录界面。Node.js 同时提供页面、账号接口和受保护的报表资源，SQLite 保存账户和会话。无需 npm 安装第三方包。
+此版本的登录页面使用 Supabase JavaScript 客户端，静态托管即可运行，不需要 Node.js 或 npm。将项目文件发布到支持 HTTPS 的静态网站托管服务。不要通过 `file://` 直接打开 HTML 文件。
 
-运行要求为 Node.js 22.13 或以上。Windows 双击 `启动企业网站.cmd`；其他环境执行 `npm start`。默认监听 `127.0.0.1:8765`，仅本机可访问。若提示端口占用，请停止之前运行的网站窗口。
+## Supabase 配置
 
-## 初始化与成员审核
+1. 在 `supabase.js` 中设置 Supabase 项目 URL 和 publishable key。publishable key 可以放在浏览器代码中；不要使用 `service_role` 密钥。
+2. 在 Supabase Dashboard 的 Authentication 设置中设置 Site URL 为部署后的网站地址。
+3. 将实际登录页和重置密码页地址添加到允许的 Redirect URLs。当前回调地址为 `auth.html?mode=login` 和 `auth.html?mode=reset`。
+4. 按需启用邮箱验证，并配置可用的 SMTP/邮件模板。注册和密码重置邮件由 Supabase 发送。
+5. 确认 Supabase Auth 的密码策略允许至少 12 个字符。
 
-没有内置管理员或默认密码。数据库尚未初始化时，启动窗口显示一次性初始化口令，负责人打开网站创建第一个管理员。重启未初始化的网站会产生新口令；初始化后该入口关闭。
+登录页直接调用 Supabase Auth 的密码登录、注册、重置邮件及改密接口。注册时姓名和部门写入用户 metadata。新注册用户是否能立即登录取决于 Supabase 的邮箱验证设置。
 
-注册账户的初始状态为“待审核”，无法读取报表。管理员应先核实成员身份，再在“成员与注册审核”启用访问。邮箱是账户标识；此版本不发送邮件，不代表已验证邮箱所属权。对外开放前应接入企业身份提供方，或由管理员按企业流程核验。
+## 数据访问限制
 
-此版本不提供自动找回密码，不发送虚构验证邮件。成员需要联系企业管理员处理无法登录问题。不要通过删除账户数据库来恢复个别账户。
+当前报表数据位于静态文件 `dashboard-data.js`。Supabase 登录只用于界面会话校验，无法保护已经公开部署的 HTML、脚本或报表数据文件。任何能访问网站的人都可以下载这些文件。
 
-## 会话和访问保护
+如报表包含敏感信息，请勿以当前纯静态方式公开部署。应将数据存入 Supabase 数据库并配置 Row Level Security（RLS），或通过服务端 API 在每次读取时验证用户身份和权限。浏览器中只能使用 publishable key；绝不能将 `service_role` 密钥放入前端。
 
-- 密码使用 scrypt，参数 N=131072、r=8、p=1，每个密码使用随机盐。服务端不保存明文密码。
-- 会话令牌由随机值生成，数据库只保存 SHA-256 校验值。Cookie 使用 HttpOnly、SameSite=Strict，HTTPS 配置下增加 Secure 并使用 __Host- 前缀。
-- 写操作检查来源、专用请求头和登录会话 CSRF 令牌。注册、登录和修改密码均有速率限制及密码计算并发限制。
-- 默认会话有效期 8 小时，可选择 7 天。退出、改密、停用分别撤销对应会话；服务端校验过期时间。
-- 私有报表、脚本和数据需要登录才能从账号服务读取。服务端采用文件白名单，不提供数据库、运维脚本、压缩包或其他任意文件下载。
-- 所有通过审核的普通成员均可读取全部现有报表；未实施按工厂、报表或部门划分的数据权限。
+## 常见问题
 
-## 集中部署
-
-将网站放在受控企业服务器上，使用 HTTPS 反向代理转发至 Node.js。设置 `PUBLIC_ORIGIN` 为实际入口，例如 `https://engineering.example.com`；反向代理需要保留该 Host，并转发 `/api/` 和页面到同一个 Node.js 服务。不得把私有报表或数据文件另行交由无鉴权的静态服务器直接提供。
-
-`HOST` 默认 `127.0.0.1`，可保留此设置让反向代理与 Node.js 同机运行。需要其他绑定时，先设置 HTTPS 的 `PUBLIC_ORIGIN`；`PORT` 可自定义。Cookie 安全标记取决于 `PUBLIC_ORIGIN`，不要在正式部署中使用 HTTP 或未配置入口的外网绑定。
-
-正式部署仍需企业运维完成证书、域名、访问范围、备份、日志保留及身份策略配置。本包未执行公网发布，也没有连接企业 SSO、SMTP 或云数据库。请在目标环境完成验收后再开放给实际成员。
-
-## 数据与升级
-
-运行后创建 `data/accounts.sqlite` 及可能的 SQLite WAL/SHM 文件。先停止网站，再备份整个 `data` 目录，并限制操作系统层面的文件访问权限。更新页面与脚本时保留该目录。交付 ZIP 仅包含源码和报表，不包含真实账号数据库。
-
-不要将目录直接上传到公共静态托管，也不要分发包含实际账号数据库的压缩包。拥有电脑文件权限的人仍然可以读取本地源文件；服务端登录控制保护的是通过网站发起的访问。
-
-## 验证
-
-`npm test` 使用临时数据库及虚构测试身份，验证服务端鉴权、注册审核、CSRF、持久化、密码变更、会话撤销和速率限制，同时运行既有报表测试。测试不会在真实数据目录中创建账户。
-
-实现依据：[Node.js SQLite 文档](https://nodejs.org/api/sqlite.html)、[OWASP 密码存储指南](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)、[OWASP 会话管理指南](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)。
+- 无法登录或注册：检查浏览器网络连接、Supabase 项目 URL/key，以及 Supabase Auth 是否启用了 Email 提供方。
+- 验证或重置链接打开错误页面：检查 Supabase Site URL 和 Redirect URLs 是否包含实际的 HTTPS 域名及相应路径。
+- 收不到邮件：检查 Auth 邮件提供方、SMTP 配置、垃圾邮件文件夹及邮件模板。
+- 本地 `file://` 打开时无法登录：这是浏览器来源限制；请部署到 HTTPS 静态托管地址后使用。

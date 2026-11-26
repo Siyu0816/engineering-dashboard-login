@@ -7,6 +7,8 @@
   <meta name="description" content="工程部运营中心：连接维护成本、设备可靠性、资本投资与能源管理。"><meta name="theme-color" content="#27204b"><title>Engineering Operations · Givaudan</title>
   <link rel="icon" type="image/png" href="./img/GIV%20LM%20AlluringPurple.png">
   <link rel="stylesheet" href="./styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="./supabase.js"></script>
   <script defer src="./auth-client.js"></script>
   <script defer src="./dashboard-data.js"></script>
   <script defer src="./comparison-charts.js"></script>
@@ -144,7 +146,7 @@
         </div>
       </section>
 
-<section id="view-home" class="view-panel"><div class="exp-progress" aria-hidden="true"></div><section class="v3-home-hero"><div class="v3-home-copy"><span class="v3-overline">GIVAUDAN · ENGINEERING OPERATIONS</span><h1 data-zh="工程运营，<br><em>全域洞察。</em>" data-en="Engineering operations.<br><em>Connected insights.</em>" >工程运营，<br><em>全域洞察。</em></h1><h2 data-zh="工程部运营中心" data-en="Engineering Operations Center" >工程部运营中心</h2><p data-zh="连接维护成本、设备可靠性、资本投资与能源管理。<br>选择一个业务模块，直达你需要的分析。" data-en="Connect costs, asset reliability, capital investment and energy.<br>Choose a domain. Find the analysis you need." >连接维护成本、设备可靠性、资本投资与能源管理。<br>选择一个业务模块，直达你需要的分析。</p><a href="#home-modules" class="v3-home-explore"><span data-zh="探索四大模块" data-en="Explore the four domains" >探索四大模块</span><span aria-hidden="true">↓</span></a></div><div class="v3-home-image"><img src="./img/工厂俯视图.jpg" alt="工厂园区俯视图 / Aerial view of the site"><div class="v3-image-caption"><span>ENGINEERING / CONNECTED PERSPECTIVE</span><span>CN18</span></div></div></section><section id="home-modules" class="v3-home-modules"><div class="v3-modules-heading"><div><span class="v3-overline">FOUR DOMAINS. ONE CONNECTED VIEW.</span><h2 data-zh="选择你的业务视角" data-en="Choose your perspective" >选择你的业务视角</h2></div><p data-zh="四大模块 · 十个报表" data-en="Four domains · Ten reports" >四大模块 · 十个报表</p></div><div class="v3-module-grid"><button type="button" class="v3-module" data-route="overview"><span class="v3-module-top"><span>01 / COST</span><span aria-hidden="true">◈</span></span><span class="v3-module-title"><span data-zh="成本管理" data-en="Cost management" >成本管理</span></span><span data-zh="预算与实际、区域成本、支出改善及合同。" data-en="Budgets, actuals, area costs, improvements and contracts." class="v3-module-description">预算与实际、区域成本、支出改善及合同。</span><span class="v3-module-bottom"><span data-zh="4 个报表" data-en="4 reports" >4 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="breakdown"><span class="v3-module-top"><span>02 / MAINTENANCE</span><span aria-hidden="true">⌁</span></span><span class="v3-module-title"><span data-zh="设备与维护" data-en="Asset & maintenance" >设备与维护</span></span><span data-zh="故障停机、工单执行与每日维护计划。" data-en="Downtime, work-order execution and daily maintenance." class="v3-module-description">故障停机、工单执行与每日维护计划。</span><span class="v3-module-bottom"><span data-zh="3 个报表" data-en="3 reports" >3 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="capex"><span class="v3-module-top"><span>03 / CAPEX</span><span aria-hidden="true">▥</span></span><span class="v3-module-title"><span data-zh="资本投资" data-en="Capital investment" >资本投资</span></span><span data-zh="项目预算、资金占用及采购收货计划。" data-en="Project budgets, commitments and goods receipt plans." class="v3-module-description">项目预算、资金占用及采购收货计划。</span><span class="v3-module-bottom"><span data-zh="2 个报表" data-en="2 reports" >2 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="energy"><span class="v3-module-top"><span>04 / ENERGY</span><span aria-hidden="true">✳</span></span><span class="v3-module-title"><span data-zh="能源管理" data-en="Energy management" >能源管理</span></span><span data-zh="能源消耗、生产量、单位能耗与费用。" data-en="Energy use, production, intensity and utility costs." class="v3-module-description">能源消耗、生产量、单位能耗与费用。</span><span class="v3-module-bottom"><span data-zh="1 个报表" data-en="1 report" >1 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button></div></section><footer class="v3-home-footer"><span>GIVAUDAN · ENGINEERING INTELLIGENCE</span><span data-zh="企业工作空间 · 授权访问" data-en="Enterprise workspace · Authorized access" >企业工作空间 · 授权访问</span></footer></section>
+<section id="view-home" class="view-panel"><div class="exp-progress" aria-hidden="true"></div><section class="v3-home-hero"><div class="v3-home-copy"><span class="v3-overline">GIVAUDAN · ENGINEERING OPERATIONS</span><h1 data-zh="工程运营，<br><em>全域洞察。</em>" data-en="Engineering operations.<br><em>Connected insights.</em>" >工程运营，<br><em>全域洞察。</em></h1><h2 data-zh="工程部运营中心" data-en="Engineering Operations Center" >工程部运营中心</h2><p data-zh="连接维护成本、设备可靠性、资本投资与能源管理。<br>选择一个业务模块，直达你需要的分析。" data-en="Connect costs, asset reliability, capital investment and energy.<br>Choose a domain. Find the analysis you need." >连接维护成本、设备可靠性、资本投资与能源管理。<br>选择一个业务模块，直达你需要的分析。</p><a href="#home-modules" class="v3-home-explore"><span data-zh="探索四大模块" data-en="Explore the four domains" >探索四大模块</span><span aria-hidden="true">↓</span></a></div><div class="v3-home-image"><img src="./img/工厂俯视图.jpg" alt="工厂园区俯视图 / Aerial view of the site"><div class="v3-image-caption"><span>ENGINEERING / CONNECTED PERSPECTIVE</span><span>CN18</span></div></div></section><section id="home-modules" class="v3-home-modules"><div class="v3-modules-heading"><div><span class="v3-overline">FOUR DOMAINS. ONE CONNECTED VIEW.</span><h2 data-zh="选择你的业务视角" data-en="Choose your perspective" >选择你的业务视角</h2></div><p data-zh="四大模块 · 十个报表" data-en="Four domains · Ten reports" >四大模块 · 十个报表</p></div><div class="v3-module-grid"><button type="button" class="v3-module" data-route="overview"><span class="v3-module-top"><span>01 / COST</span><span aria-hidden="true">◈</span></span><span class="v3-module-title"><span data-zh="成本管理" data-en="Cost management" >成本管理</span></span><span data-zh="预算与实际、区域成本、支出改善及合同。" data-en="Budgets, actuals, area costs, improvements and contracts." class="v3-module-description">预算与实际、区域成本、支出改善及合同。</span><span class="v3-module-bottom"><span data-zh="4 个报表" data-en="4 reports" >4 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="breakdown"><span class="v3-module-top"><span>02 / MAINTENANCE</span><span aria-hidden="true">⌁</span></span><span class="v3-module-title"><span data-zh="设备与维护" data-en="Asset & maintenance" >设备与维护</span></span><span data-zh="故障停机、工单执行与每日维护计划。" data-en="Downtime, work-order execution and daily maintenance." class="v3-module-description">故障停机、工单执行与每日维护计划。</span><span class="v3-module-bottom"><span data-zh="3 个报表" data-en="3 reports" >3 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="capex"><span class="v3-module-top"><span>03 / CAPEX</span><span aria-hidden="true">▥</span></span><span class="v3-module-title"><span data-zh="资本投资" data-en="Capital investment" >资本投资</span></span><span data-zh="项目预算、资金占用及采购收货计划。" data-en="Project budgets, commitments and goods receipt plans." class="v3-module-description">项目预算、资金占用及采购收货计划。</span><span class="v3-module-bottom"><span data-zh="2 个报表" data-en="2 reports" >2 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="energy"><span class="v3-module-top"><span>04 / ENERGY</span><span aria-hidden="true">✳</span></span><span class="v3-module-title"><span data-zh="能源管理" data-en="Energy management" >能源管理</span></span><span data-zh="能源消耗、生产量、单位能耗与费用。" data-en="Energy use, production, intensity and utility costs." class="v3-module-description">能源消耗、生产量、单位能耗与费用。</span><span class="v3-module-bottom"><span data-zh="1 个报表" data-en="1 report" >1 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button></div></section><footer class="v3-home-footer"><span>GIVAUDAN · ENGINEERING INTELLIGENCE</span><span data-zh="本地数据快照 · 无需登录" data-en="Local data snapshot · No sign-in required" >本地数据快照 · 无需登录</span></footer></section>
 
       <section id="view-area" class="view-panel" hidden>
         <div class="kpi-grid area-kpis">
@@ -181,6 +183,10 @@
       </section>
 
       <section id="view-details" class="view-panel" hidden>
+        <ul class="spending-note" role="note">
+          <li><strong>小额支出：</strong><span>外部服务成本 + 外部材料成本（实际成本 &lt; 5000 CHF）</span></li>
+          <li><strong>改善：</strong><span>ZPM6 工单成本</span></li>
+        </ul>
         <div id="spending-summary" class="chart-grid spending-grid">
           <article class="card chart-card">
             <header class="card-header"><div><h2>小额支出实际成本</h2><p>按区域统计</p></div><button class="visual-detail-button" type="button" data-detail-action="small-spending" aria-label="查看小额支出明细" title="查看小额支出明细">i</button></header>
@@ -223,16 +229,45 @@
 
       <section id="view-capex" class="view-panel" hidden>
         <div class="section-summary"><h2>CAPEX 总览</h2></div>
+        <!-- <div class="control-group">
+            <label for="capex-year-filter">Year</label>
+            <select id="capex-year-filter">
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029 ff</option>
+            </select>
+        </div> -->
+        <label class="filter-control">
+            <span>CAPEX Year</span>
+
+            <select
+                id="capex-year-filter"
+                multiple
+                size="4">
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029 ff</option>
+            </select>
+        </label>
         <div class="kpi-grid capex-kpis">
           <article class="kpi-card accent-teal"><div class="kpi-label">总预算</div><div id="capex-overview-total-budget" class="kpi-value">—</div></article>
           <article class="kpi-card accent-blue"><div class="kpi-label">已批准预算</div><div id="capex-overview-approved-budget" class="kpi-value">—</div></article>
           <article class="kpi-card accent-gold"><div class="kpi-label">尚未占用</div><div id="capex-overview-not-yet-occupied" class="kpi-value">—</div></article>
           <article class="kpi-card accent-violet"><div class="kpi-label">采购订单金额</div><div id="capex-overview-po-value" class="kpi-value">—</div></article>
-          <article class="kpi-card accent-blue"><div class="kpi-label">采购申请金额</div><div id="capex-overview-pr-value" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">采购申请金额<button class="visual-detail-button" type="button" data-detail-action="capex-pr" aria-label="查看采购申请明细" title="查看采购申请明细">i</button></div><div id="capex-overview-pr-value" class="kpi-value">—</div></article>
           <article class="kpi-card accent-teal"><div class="kpi-label">已收货金额</div><div id="capex-overview-gr-value" class="kpi-value">—</div></article>
           <article class="kpi-card accent-gold"><div class="kpi-label">未收货金额</div><div id="capex-overview-ungr-value" class="kpi-value">—</div></article>
         </div>
-        <div class="capex-grid">
+        <div id="capex-pr-detail-panel" class="card chart-card detail-table-panel" hidden>
+          <header class="card-header">
+            <div><h2>采购申请详情</h2><p>ME5A</p></div>
+            <button id="capex-pr-detail-back" class="detail-back-button" type="button" aria-label="返回CAPEX总览" title="返回CAPEX总览">←</button>
+          </header>
+          <div id="capex-pr-detail-table" class="table-wrap"></div>
+        </div>
+        <div id="capex-grid" class="capex-grid">
           <article class="card chart-card"><header class="card-header"><div><h2>已批准预算</h2></div></header><div id="capex-budget-gauge" class="chart capex-gauge"></div></article>
           <article class="card chart-card"><header class="card-header"><div><h2>未收货 / 采购申请 / 已收货</h2></div></header><div id="capex-distribution-chart" class="chart capex-distribution"></div></article>
           <article class="card chart-card capex-project-card"><header class="card-header"><div><h2>各项目未收货、已收货、采购申请与占用</h2><p>按项目</p></div></header><div id="capex-project-chart" class="chart capex-project-chart"></div></article>

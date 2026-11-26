@@ -6,7 +6,16 @@ import pandas as pd
 
 
 PROJECT_DIR = Path(__file__).resolve().parent
-SOURCE_DIR = PROJECT_DIR / "data"
+SOURCE_DIR = Path(
+    r"C:\Users\bais\Givaudan International SA\Engineering - Opex"
+)
+WO_DIR = Path(
+    r"C:\Users\bais\Givaudan International SA\STD_F&B_Changzhou_Site - 01. CZ daily meeting"
+)
+CAPEX_DIR = Path(
+    r"C:\Users\bais\Givaudan International SA\Engineering - Capex Review Meetings"
+)
+# SOURCE_DIR = PROJECT_DIR / "data"
 OUTPUT_FILE = PROJECT_DIR / "dashboard-data.js"
 MONTHS = {
     name.upper(): index
@@ -361,7 +370,7 @@ def read_work_order_status():
 
 def read_work_order_schedule_summary():
     frame = pd.read_excel(
-        SOURCE_DIR / "WO" / "2026 WO Schedule.xlsx",
+        WO_DIR / "2026 WO Schedule.xlsx",
         sheet_name="Summary",
         header=None,
     )
@@ -555,13 +564,14 @@ def read_energy_data():
 
 def read_capex_data():
     project_frame = pd.read_excel(SOURCE_DIR / "Capex" / "CJE0.xlsx", sheet_name="CJE0")
-    status_file = SOURCE_DIR / "Capex" / "2026 CN18 Capex Status.xlsx"
+    status_file = CAPEX_DIR / "2026 CN18 Capex Status.xlsx"
     exchange_rate_frame = pd.read_excel(status_file, sheet_name="Currency")
     exchange_rates = {
         clean_text(row.get("Currency Code")).upper(): parse_sap_number(row.get("Rate"))
         for _, row in exchange_rate_frame.iterrows()
         if clean_text(row.get("Currency Code"))
     }
+    exchange_rates.setdefault("USD", 0.1505)
     exchange_rates.setdefault("EUR", 0.1308)
     projects = []
     for _, row in project_frame.iterrows():
@@ -578,16 +588,29 @@ def read_capex_data():
                 "assignedTotal": parse_sap_number(row.get("Assigned--Total")),
                 "availableTotal": parse_sap_number(row.get("Available--Total")),
                 "budget2026": parse_sap_number(row.get("Budg in OC--2026")),
-                "actual2026": parse_sap_number(row.get("Act in OC--2026")),
-                "committed2026": parse_sap_number(row.get("Cmmt.in OC--2026")),
-                "assigned2026": parse_sap_number(row.get("Assigned--2026")),
-                "available2026": parse_sap_number(row.get("Available--2026")),
                 "budget2027": parse_sap_number(row.get("Budg in OC--2027")),
                 "budget2028": parse_sap_number(row.get("Budg in OC--2028")),
                 "budget2029": parse_sap_number(row.get("Budg in OC--2029 ff")),
+                "actual2026": parse_sap_number(row.get("Act in OC--2026")),
+                "actual2027": parse_sap_number(row.get("Act in OC--2027")),
+                "actual2028": parse_sap_number(row.get("Act in OC--2028")),
+                "actual2029": parse_sap_number(row.get("Act in OC--2029 ff")),
+                "committed2026": parse_sap_number(row.get("Cmmt.in OC--2026")),
+                "committed2027": parse_sap_number(row.get("Cmmt.in OC--2027")),
+                "committed2028": parse_sap_number(row.get("Cmmt.in OC--2028")),
+                "committed2029": parse_sap_number(row.get("Cmmt.in OC--2029 ff")),
+                "assigned2026": parse_sap_number(row.get("Assigned--2026")),
+                "assigned2027": parse_sap_number(row.get("Assigned--2027")),
+                "assigned2028": parse_sap_number(row.get("Assigned--2028")),
+                "assigned2029": parse_sap_number(row.get("Assigned--2029 ff")),
+                "available2026": parse_sap_number(row.get("Available--2026")),
+                "available2027": parse_sap_number(row.get("Available--2027")),
+                "available2028": parse_sap_number(row.get("Available--2028")),
+                "available2029": parse_sap_number(row.get("Available--2029 ff")),
                 "actOverall": parse_sap_number(row.get("Act in OC--Overall")),
             }
         )
+    # print(project_frame.columns.tolist())
 
     actual_frame = pd.read_excel(SOURCE_DIR / "Capex" / "CJ74.XLSX")
     capex_actual = []
@@ -650,6 +673,12 @@ def read_capex_data():
     requisitions_frame = pd.read_excel(SOURCE_DIR / "Capex" / "ME5A.XLSX")
     requisitions = []
     for _, row in requisitions_frame.iterrows():
+        requisition_date = pd.to_datetime(row.get("Requisition Date"), errors="coerce")
+        next_month_date = (
+            requisition_date + pd.DateOffset(months=1)
+            if pd.notna(requisition_date)
+            else pd.NaT
+        )
         requisitions.append(
             {
                 "requisition": clean_key(row.get("Purchase Requisition")),
@@ -659,6 +688,16 @@ def read_capex_data():
                 "value": number(row.get("Total Value")),
                 "currency": clean_text(row.get("Currency")),
                 "deliveryDate": clean_text(row.get("Delivery Date")),
+                "requisitionDate": (
+                    requisition_date.strftime("%Y-%m-%d")
+                    if pd.notna(requisition_date)
+                    else ""
+                ),
+                "nextMonthDate": (
+                    next_month_date.strftime("%Y-%m-%d")
+                    if pd.notna(next_month_date)
+                    else ""
+                ),
                 "requisitioner": clean_text(row.get("Requisitioner")),
             }
         )
@@ -679,6 +718,7 @@ def read_capex_data():
         project["project"][4:].strip(): project
         for project in projects
     }
+    pr_value_by_year = {}
     project_pr_values = {}
     unmapped_requisitions = []
     for row in requisitions:
@@ -690,6 +730,18 @@ def read_capex_data():
             unmapped_requisitions.append(row["requisition"])
             continue
         project_pr_values[wbs] = project_pr_values.get(wbs, 0) + row["value"]
+        req_date = pd.to_datetime(
+            row["requisitionDate"],
+            errors="coerce"
+        )
+
+        if pd.notna(req_date):
+            year = str(req_date.year)
+
+            pr_value_by_year[year] = (
+                pr_value_by_year.get(year,0)
+                + row["value"]
+            )
     if unmapped_requisitions:
         raise ValueError(
             "Could not map CAPEX requisitions to a CJE0 project WBS: "
@@ -708,28 +760,114 @@ def read_capex_data():
                 "wbs": wbs,
                 "name": status_project_names.get(wbs) or project["name"],
                 "budget2026": project["budget2026"],
-                "grValue": gr_value,
-                "ungrValue": ungr_value,
-                "prValue": pr_value,
-                "occupied": gr_value + ungr_value + pr_value,
+                "budget2027": project["budget2027"],
+                "budget2028": project["budget2028"],
+                "budget2029": project["budget2029"],
+                "grValue2026": project["actual2026"],
+                "grValue2027": project["actual2027"],
+                "grValue2028": project["actual2028"],
+                "grValue2029": project["actual2029"],
+
+                "ungrValue2026": project["committed2026"],
+                "ungrValue2027": project["committed2027"],
+                "ungrValue2028": project["committed2028"],
+                "ungrValue2029": project["committed2029"],
+
+                "prValue2026":
+                    project_pr_values.get(wbs,0),
+
+                "prValue2027": 0,
+                "prValue2028": 0,
+                "prValue2029": 0
             }
         )
     project_summary.sort(key=lambda project: project["wbs"])
 
-    approved_budget = sum(project["budget2026"] for project in project_summary)
-    gr_value = sum(project["actual2026"] for project in projects)
-    ungr_value = sum(project["committed2026"] for project in projects)
-    po_value = sum(project["assigned2026"] for project in projects)
-    pr_value = sum(row["value"] for row in requisitions)
-    scoped_projects = [
-        project
-        for wbs, project in project_by_wbs.items()
-        if wbs in status_project_names
-    ]
-    scoped_pr_value = sum(project["prValue"] for project in project_summary)
-    not_yet_occupied = (
-        sum(project["available2026"] for project in scoped_projects) - scoped_pr_value
-    )
+    # approved_budget = sum(project["budget2026"] for project in project_summary)
+    # gr_value = sum(project["actual2026"] for project in projects)
+    # ungr_value = sum(project["committed2026"] for project in projects)
+    # po_value = sum(project["assigned2026"] for project in projects)
+    # pr_value = sum(row["value"] for row in requisitions)
+    # scoped_projects = [
+    #     project
+    #     for wbs, project in project_by_wbs.items()
+    #     if wbs in status_project_names
+    # ]
+    # scoped_pr_value = sum(project["prValue"] for project in project_summary)
+    # not_yet_occupied = (
+    #     sum(project["available2026"] for project in scoped_projects) - scoped_pr_value
+    # )
+    # print("project_pr_values")
+    # print(project_pr_values)
+
+    # print("scoped_pr_value")
+    # print(scoped_pr_value)
+
+    overview_by_year = {}
+
+    for year in ["2026", "2027", "2028", "2029"]:
+
+        budget_field = f"budget{year}"
+        actual_field = f"actual{year}"
+        committed_field = f"committed{year}"
+        assigned_field = f"assigned{year}"
+        available_field = f"available{year}"
+
+        approved_budget = sum(
+            project.get(budget_field, 0)
+            for project in projects
+            if project["project"] != "PRJ E/CZ01-S0130"
+        )
+        # print(project['project'])
+        # print(f"approved_budget for {year}: {approved_budget}")
+
+        gr_value = sum(
+            project.get(actual_field, 0)
+            for project in projects
+            if project["project"] != "PRJ E/CZ01-S0130"
+        )
+
+        ungr_value = sum(
+            project.get(committed_field, 0)
+            for project in projects
+            if project["project"] != "PRJ E/CZ01-S0130"
+        )
+
+        po_value = sum(
+            project.get(assigned_field, 0)
+            for project in projects
+            if project["project"] != "PRJ E/CZ01-S0130"
+        )
+
+        not_yet_occupied = (
+            sum(
+                project.get(available_field, 0)
+                for project in projects
+                if project["project"] != "PRJ E/CZ01-S0130"
+            )
+            - pr_value_by_year.get(year,0)
+        )
+
+        overview_by_year[year] = {
+            # "totalBudget": total_budget,
+            "approvedBudget": approved_budget,
+            "notYetOccupied": not_yet_occupied,
+            "poValue": po_value,
+            "prValue":
+                pr_value_by_year.get(
+                    year,
+                    0
+                ),
+            "grValue": gr_value,
+            "ungrValue": ungr_value,
+            "occupied":
+                gr_value
+                + ungr_value
+                + pr_value_by_year.get(
+                    year,
+                    0
+                )
+        }
 
     purchase_orders = purchasing_file("ME2N.xlsx")
     budget_2026 = sum(project["budget2026"] for project in projects)
@@ -798,16 +936,22 @@ def read_capex_data():
             "ungrValue": number(sum(row["netOrderValueCny"] for row in purchase_orders)),
             "exchangeRates": exchange_rates,
         },
+        # "overview": {
+        #     "totalBudget": total_budget,
+        #     "approvedBudget": approved_budget,
+        #     "notYetOccupied": not_yet_occupied,
+        #     "poValue": po_value,
+        #     "prValue": pr_value,
+        #     "grValue": gr_value,
+        #     "ungrValue": ungr_value,
+        #     "occupied": gr_value + ungr_value + pr_value,
+        #     "projectSummary": project_summary,
+        # },
         "overview": {
             "totalBudget": total_budget,
-            "approvedBudget": approved_budget,
-            "notYetOccupied": not_yet_occupied,
-            "poValue": po_value,
             "prValue": pr_value,
-            "grValue": gr_value,
-            "ungrValue": ungr_value,
-            "occupied": gr_value + ungr_value + pr_value,
             "projectSummary": project_summary,
+            "years": overview_by_year
         },
     }
 
