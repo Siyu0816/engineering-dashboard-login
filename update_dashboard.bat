@@ -1,6 +1,6 @@
 @echo off
 
-set LOG=C:\Users\bais\Documents\GitHub\engineering-dashboard-login\auto_update.log
+set LOG=C:\Users\bais\Documents\GitHub\engineering-dashboard-login\update.log
 
 cd /d "C:\Users\bais\Documents\GitHub\engineering-dashboard-login"
 

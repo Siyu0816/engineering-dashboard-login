@@ -973,6 +973,10 @@ h1 {
   display: none !important;
 }
 
+.capex-grid[hidden] {
+  display: none !important;
+}
+
 .area-kpis .kpi-card {
   min-height: 90px;
 }
@@ -1102,6 +1106,20 @@ h1 {
 
 .spending-grid .chart-tall {
   height: 320px;
+}
+
+.spending-note {
+  margin: 0 0 14px;
+  padding: 9px 18px 9px 36px;
+  border-radius: 5px;
+  background: #d8def2;
+  color: #17165f;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.spending-note li + li {
+  margin-top: 2px;
 }
 
 .contract-grid {

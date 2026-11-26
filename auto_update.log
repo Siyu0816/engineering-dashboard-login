@@ -1,0 +1,1735 @@
+======================================== 
+Fri 11/20/2026 15:30:44.07 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 726fba8] Dashboard Data Update
+ 2 files changed, 23 insertions(+), 3 deletions(-)
+ create mode 100644 auto_update.log
+To https://github.com/Siyu0816/engineering-dashboard.git
+   cc098bc..726fba8  main -> main
+======================================== 
+Fri 11/20/2026 15:31:45.40 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 2b0fd56] Dashboard Data Update
+ 1 file changed, 20 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   726fba8..2b0fd56  main -> main
+======================================== 
+Fri 11/20/2026 16:00:02.90 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main e97d5ce] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   2b0fd56..e97d5ce  main -> main
+======================================== 
+Fri 11/20/2026 16:30:02.61 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 09e7dc0] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Fri 11/20/2026 16:33:13.65 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 0785bee] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   e97d5ce..0785bee  main -> main
+======================================== 
+Fri 11/20/2026 16:34:17.13 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main b3bb314] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   0785bee..b3bb314  main -> main
+======================================== 
+Fri 11/20/2026 17:00:45.10 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main db62033] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   b3bb314..db62033  main -> main
+======================================== 
+Mon 11/23/2026  7:34:05.42 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 4612f29] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   db62033..4612f29  main -> main
+======================================== 
+Mon 11/23/2026  7:39:22.77 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 43ab75c] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026  8:00:02.63 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 52df469] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   4612f29..52df469  main -> main
+======================================== 
+Mon 11/23/2026  8:09:15.92 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main c362b30] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   52df469..c362b30  main -> main
+======================================== 
+Mon 11/23/2026  8:30:02.96 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 90c1475] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026  8:39:17.90 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 43351fc] Dashboard Data Update
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   c362b30..43351fc  main -> main
+======================================== 
+Mon 11/23/2026  9:00:03.00 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 54ad08f] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   43351fc..54ad08f  main -> main
+======================================== 
+Mon 11/23/2026  9:09:16.17 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,051
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,438,939.60 CNY
+Excluded rows without a posting period: 33 (55,407,978.98 CNY)
+Budget total: 119,265,168.72 CNY
+[main 78fa390] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   54ad08f..78fa390  main -> main
+======================================== 
+Mon 11/23/2026  9:30:03.17 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main c697af5] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   78fa390..c697af5  main -> main
+======================================== 
+Mon 11/23/2026 10:00:04.42 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 942dbd7] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   c697af5..942dbd7  main -> main
+======================================== 
+Mon 11/23/2026 10:30:03.00 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 81f616b] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026 11:00:02.76 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 0fc1976] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   942dbd7..0fc1976  main -> main
+======================================== 
+Mon 11/23/2026 11:30:02.88 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main df51f22] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   0fc1976..df51f22  main -> main
+======================================== 
+Mon 11/23/2026 12:00:02.83 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 920cca7] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   df51f22..920cca7  main -> main
+======================================== 
+Mon 11/23/2026 12:30:02.75 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main b515dca] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026 13:00:02.80 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main b4b6afe] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   920cca7..b4b6afe  main -> main
+======================================== 
+Mon 11/23/2026 13:30:02.97 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 72785ee] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   b4b6afe..72785ee  main -> main
+======================================== 
+Mon 11/23/2026 14:00:03.35 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 53efba2] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026 14:30:04.26 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main e1a488c] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   72785ee..e1a488c  main -> main
+======================================== 
+Mon 11/23/2026 14:33:24.02 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 75a1067] Dashboard Data Update
+ 2 files changed, 32 insertions(+), 4 deletions(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   e1a488c..75a1067  main -> main
+======================================== 
+Mon 11/23/2026 14:37:39.96 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 418b1db] Dashboard Data Update
+ 2 files changed, 30 insertions(+), 3 deletions(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   75a1067..418b1db  main -> main
+======================================== 
+Mon 11/23/2026 15:00:03.30 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 4fb055b] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   418b1db..4fb055b  main -> main
+======================================== 
+Mon 11/23/2026 15:08:49.31 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 794896f] Dashboard Data Update
+ 3 files changed, 21 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   4fb055b..794896f  main -> main
+======================================== 
+Mon 11/23/2026 15:12:30.48 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 9934993] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   794896f..9934993  main -> main
+======================================== 
+Mon 11/23/2026 15:27:18.25 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 1b8b924] Dashboard Data Update
+ 2 files changed, 40 insertions(+), 2 deletions(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   9934993..1b8b924  main -> main
+======================================== 
+Mon 11/23/2026 15:30:03.10 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main f45ee3f] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   1b8b924..f45ee3f  main -> main
+======================================== 
+Mon 11/23/2026 16:00:02.73 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main b25682d] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   f45ee3f..b25682d  main -> main
+======================================== 
+Mon 11/23/2026 16:30:02.72 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main e460a3e] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026 16:33:58.57 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 73e6cbf] Dashboard Data Update
+ 3 files changed, 31 insertions(+), 13 deletions(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   b25682d..73e6cbf  main -> main
+======================================== 
+Mon 11/23/2026 17:00:03.05 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 64d9c9d] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   73e6cbf..64d9c9d  main -> main
+======================================== 
+Mon 11/23/2026 17:02:47.67 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main c83cb9e] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026 17:30:02.79 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 656d298] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   64d9c9d..656d298  main -> main
+======================================== 
+Mon 11/23/2026 18:00:02.57 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main af8c340] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026 18:30:02.59 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 25177e6] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   656d298..25177e6  main -> main
+======================================== 
+Mon 11/23/2026 19:00:02.65 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 92ecdd8] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   25177e6..92ecdd8  main -> main
+======================================== 
+Mon 11/23/2026 19:30:02.67 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 39fd767] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   92ecdd8..39fd767  main -> main
+======================================== 
+Mon 11/23/2026 20:00:02.53 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 2a4cea4] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   39fd767..2a4cea4  main -> main
+======================================== 
+Mon 11/23/2026 20:30:02.58 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 3768744] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   2a4cea4..3768744  main -> main
+======================================== 
+Mon 11/23/2026 21:00:02.50 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main dbc37fa] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Mon 11/23/2026 21:30:02.70 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main c4e95dc] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   3768744..c4e95dc  main -> main
+======================================== 
+Mon 11/23/2026 22:00:02.53 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 7be1760] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   c4e95dc..7be1760  main -> main
+======================================== 
+Mon 11/23/2026 22:30:02.65 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 9a9ff15] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   7be1760..9a9ff15  main -> main
+======================================== 
+Mon 11/23/2026 23:00:02.64 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main c05f5dc] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   9a9ff15..c05f5dc  main -> main
+======================================== 
+Mon 11/23/2026 23:30:02.63 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 2d6d65e] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   c05f5dc..2d6d65e  main -> main
+======================================== 
+Tue 11/24/2026  0:00:02.73 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main faaa7eb] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   2d6d65e..faaa7eb  main -> main
+======================================== 
+Tue 11/24/2026  0:30:02.59 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 2051b6c] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Tue 11/24/2026  1:00:02.54 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 9d1fa82] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   faaa7eb..9d1fa82  main -> main
+======================================== 
+Tue 11/24/2026  1:30:02.70 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 25e1008] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   9d1fa82..25e1008  main -> main
+======================================== 
+Tue 11/24/2026  2:00:02.55 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 134414a] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   25e1008..134414a  main -> main
+======================================== 
+Tue 11/24/2026  2:30:02.58 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 9daa8f2] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   134414a..9daa8f2  main -> main
+======================================== 
+Tue 11/24/2026  3:00:02.54 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main f93e6d9] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   9daa8f2..f93e6d9  main -> main
+======================================== 
+Tue 11/24/2026  3:30:02.84 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 045da1a] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   f93e6d9..045da1a  main -> main
+======================================== 
+Tue 11/24/2026  4:00:02.60 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 830fd88] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Tue 11/24/2026  4:30:02.70 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 47e9d01] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   045da1a..47e9d01  main -> main
+======================================== 
+Tue 11/24/2026  5:00:02.58 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main c9943a8] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   47e9d01..c9943a8  main -> main
+======================================== 
+Tue 11/24/2026  5:30:02.62 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 1a599df] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Tue 11/24/2026  6:00:02.66 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 708f365] Dashboard Data Update
+ 1 file changed, 18 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   c9943a8..708f365  main -> main
+======================================== 
+Tue 11/24/2026  6:30:02.57 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 54ddafe] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   708f365..54ddafe  main -> main
+======================================== 
+Tue 11/24/2026  7:00:02.56 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 9335c32] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   54ddafe..9335c32  main -> main
+======================================== 
+Tue 11/24/2026  7:30:02.62 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 2361150] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   9335c32..2361150  main -> main
+======================================== 
+Tue 11/24/2026  8:00:02.53 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 1036d6e] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   2361150..1036d6e  main -> main
+======================================== 
+Tue 11/24/2026  8:30:02.74 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 9b53e66] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   1036d6e..9b53e66  main -> main
+======================================== 
+Tue 11/24/2026  8:36:55.59 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 5e018cb] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   9b53e66..5e018cb  main -> main
+======================================== 
+Tue 11/24/2026  9:00:02.59 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 8c41487] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   5e018cb..8c41487  main -> main
+======================================== 
+Tue 11/24/2026  9:30:02.70 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 6f3169d] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   8c41487..6f3169d  main -> main
+======================================== 
+Tue 11/24/2026 10:00:05.29 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 06cba25] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   6f3169d..06cba25  main -> main
+======================================== 
+Tue 11/24/2026 10:30:08.71 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main a3f8144] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   06cba25..a3f8144  main -> main
+======================================== 
+Tue 11/24/2026 11:00:03.02 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 010a80a] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   a3f8144..010a80a  main -> main
+======================================== 
+Tue 11/24/2026 11:30:07.77 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main f41ba69] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   010a80a..f41ba69  main -> main
+======================================== 
+Tue 11/24/2026 12:00:03.84 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 18406c3] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   f41ba69..18406c3  main -> main
+======================================== 
+Tue 11/24/2026 12:30:03.15 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main e48f20e] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   18406c3..e48f20e  main -> main
+======================================== 
+Tue 11/24/2026 13:00:03.24 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main d1ef502] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   e48f20e..d1ef502  main -> main
+======================================== 
+Tue 11/24/2026 13:30:04.82 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main e2e0543] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   d1ef502..e2e0543  main -> main
+======================================== 
+Tue 11/24/2026 14:00:04.03 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main d612d6d] Dashboard Data Update
+ 1 file changed, 19 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   e2e0543..d612d6d  main -> main
+======================================== 
+Tue 11/24/2026 14:30:04.61 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main febc8fe] Dashboard Data Update
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   d612d6d..febc8fe  main -> main
+======================================== 
+Tue 11/24/2026 15:00:03.75 
+Traceback (most recent call last):
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 1030, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 925, in main
+    capex = read_capex_data()
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 810, in read_capex_data
+    for project in scoped_projects
+                   ^^^^^^^^^^^^^^^
+NameError: name 'scoped_projects' is not defined
+[main 30e8af8] Dashboard Data Update
+ 4 files changed, 124 insertions(+), 21 deletions(-)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Tue 11/24/2026 15:19:56.37 
+Traceback (most recent call last):
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 1034, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 929, in main
+    capex = read_capex_data()
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 813, in read_capex_data
+    for project in scoped_projects
+                   ^^^^^^^^^^^^^^^
+NameError: name 'scoped_projects' is not defined
+[main 82193eb] Dashboard Data Update
+ 3 files changed, 70 insertions(+), 9 deletions(-)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   febc8fe..82193eb  main -> main
+======================================== 
+Tue 11/24/2026 15:30:03.24 
+Traceback (most recent call last):
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 1034, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 929, in main
+    capex = read_capex_data()
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 813, in read_capex_data
+    for project in scoped_projects
+                   ^^^^^^^^^^^^^^^
+NameError: name 'scoped_projects' is not defined
+[main 8b800c8] Dashboard Data Update
+ 1 file changed, 16 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Tue 11/24/2026 16:00:03.58 
+Traceback (most recent call last):
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 1034, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 929, in main
+    capex = read_capex_data()
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 813, in read_capex_data
+    for project in scoped_projects
+                   ^^^^^^^^^^^^^^^
+NameError: name 'scoped_projects' is not defined
+[main 21cc8a6] Dashboard Data Update
+ 1 file changed, 15 insertions(+)
+To https://github.com/Siyu0816/engineering-dashboard.git
+   82193eb..21cc8a6  main -> main
+======================================== 
+Tue 11/24/2026 16:30:03.60 
+Traceback (most recent call last):
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 1034, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 929, in main
+    capex = read_capex_data()
+  File "C:\Users\bais\Documents\GitHub\engineering-dashboard\build_data.py", line 813, in read_capex_data
+    for project in scoped_projects
+                   ^^^^^^^^^^^^^^^
+NameError: name 'scoped_projects' is not defined
+[main e7f6158] Dashboard Data Update
+ 1 file changed, 16 insertions(+)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard.git/': Empty reply from server
+======================================== 
+Thu 11/26/2026 11:07:13.62 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 8a00f61] Dashboard Data Update
+ 16 files changed, 3148 insertions(+), 228 deletions(-)
+ create mode 100644 auto_update.log
+ create mode 100644 index-1.html
+ create mode 100644 update_dashboard.bat
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard-login.git/': Empty reply from server
+======================================== 
+Thu 11/26/2026 11:19:34.35 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 712d9e7] Dashboard Data Update
+ 2 files changed, 26 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard-login.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Siyu0816/engineering-dashboard-login.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+======================================== 
+Thu 11/26/2026 11:20:22.29 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main ad2ebd7] Dashboard Data Update
+ 2 files changed, 29 insertions(+), 1 deletion(-)
+To https://github.com/Siyu0816/engineering-dashboard-login.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Siyu0816/engineering-dashboard-login.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+======================================== 
+Thu 11/26/2026 11:24:43.35 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main a6ac276] Dashboard Data Update
+ 2 files changed, 28 insertions(+), 1 deletion(-)
+fatal: unable to access 'https://github.com/Siyu0816/engineering-dashboard-login.git/': Empty reply from server
+======================================== 
+Thu 11/26/2026 13:50:05.26 
+Generated dashboard-data.js
+Actual aggregates: 4,166
+Budget aggregates: 191
+Contracts: 23
+Work orders: 29,078
+Equipment: 93
+Work order status records: 36
+Breakdown records: 107
+Energy months: 87
+CAPEX projects: 130
+Detailed actual total: 58,547,691.49 CNY
+Excluded rows without a posting period: 32 (54,377,521.55 CNY)
+Budget total: 119,265,168.72 CNY
+[main 9af8ac3] Dashboard Data Update
+ 4 files changed, 45 insertions(+), 11 deletions(-)
+To https://github.com/Siyu0816/engineering-dashboard-login.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Siyu0816/engineering-dashboard-login.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.

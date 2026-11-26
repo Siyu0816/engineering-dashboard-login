@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="工程部运营中心：连接维护成本、设备可靠性、资本投资与能源管理。"><meta name="theme-color" content="#27204b"><title>Engineering Operations · Givaudan</title>
+  <link rel="icon" type="image/png" href="./img/GIV%20LM%20AlluringPurple.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="./supabase.js"></script>
+  <script defer src="./auth-client.js"></script>
+  <script defer src="./dashboard-data.js"></script>
+  <script defer src="./comparison-charts.js"></script>
+  <script defer src="./report-refinements.js"></script>
+  <script defer src="./app.js"></script>
+  <link rel="stylesheet" href="./experience.css">
+  <script defer src="./home-effects.js"></script>
+  <link rel="stylesheet" href="./portal.css">
+  <script defer src="./portal.js"></script>
+  <link rel="stylesheet" href="./refinement.css">
+  <link rel="stylesheet" href="./report-layout.css">
+  <link rel="stylesheet" href="./revision-v7.css">
+  <link rel="stylesheet" href="./original-palette.css">
+  <link rel="stylesheet" href="./responsive-layout.css">
+  <link rel="stylesheet" href="./focus-view.css">
+  <link rel="stylesheet" href="./account.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <a class="brand" href="#" aria-label="Engineering Department Operations Center">
+          <img class="givaudan-logo" src="./img/Logomark%20white%20CMYK.png" alt="">
+          <span class="brand-text"><strong>Givaudan</strong><small>Engineering Department Operations</small></span>
+        </a>
+        <button id="nav-back" class="nav-back" type="button" aria-label="返回当前报表" title="返回当前报表">
+          <span aria-hidden="true">←</span>
+        </button>
+      </div>
+      <div class="nav-caption">Menu</div>
+      <nav class="navigation" aria-label="Report sections">
+        <button class="nav-item nav-home active" type="button" data-view="home">
+          <span class="nav-icon" aria-hidden="true">⌂</span><span>Home</span>
+        </button>
+        <section class="nav-group">
+          <button class="nav-group-toggle" type="button" data-nav-group="cost" aria-expanded="false"><span class="nav-icon">▣</span><span class="nav-group-label">Cost Overview</span><span class="nav-chevron">⌄</span></button>
+          <div class="nav-submenu" data-nav-submenu="cost" hidden>
+            <button class="nav-item" type="button" data-view="overview">Overview</button>
+            <button class="nav-item" type="button" data-view="area">Area</button>
+            <button class="nav-item" type="button" data-view="details">Others</button>
+            <button class="nav-item" type="button" data-view="contracts">Contract</button>
+          </div>
+        </section>
+        <section class="nav-group">
+          <button class="nav-group-toggle" type="button" data-nav-group="maintenance" aria-expanded="false"><span class="nav-icon">⚒</span><span class="nav-group-label">Maintenance Dashboard</span><span class="nav-chevron">⌄</span></button>
+          <div class="nav-submenu" data-nav-submenu="maintenance" hidden>
+            <button class="nav-item" type="button" data-view="breakdown">Breakdown</button>
+            <button class="nav-item" type="button" data-view="workOrder">Work Order</button>
+            <button class="nav-item" type="button" data-view="dailyWO">Daily WO</button>
+          </div>
+        </section>
+        <section class="nav-group">
+          <button class="nav-group-toggle" type="button" data-nav-group="capex" aria-expanded="false"><span class="nav-icon">▤</span><span class="nav-group-label">CAPEX Performance</span><span class="nav-chevron">⌄</span></button>
+          <div class="nav-submenu" data-nav-submenu="capex" hidden>
+            <button class="nav-item" type="button" data-view="capex">CAPEX 总览</button>
+            <button class="nav-item" type="button" data-view="capexPlan">CAPEX GR计划</button>
+          </div>
+        </section>
+        <section class="nav-group">
+          <button class="nav-group-toggle" type="button" data-nav-group="energy" aria-expanded="false"><span class="nav-icon">⚛</span><span class="nav-group-label">Energy Dashboard</span><span class="nav-chevron">⌄</span></button>
+          <div class="nav-submenu" data-nav-submenu="energy" hidden>
+            <button class="nav-item" type="button" data-view="energy">Energy</button>
+          </div>
+        </section>
+      </nav>
+    </aside>
+    <button id="menu-backdrop" class="menu-backdrop" type="button" aria-label="关闭菜单" tabindex="-1"></button>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="sidebar">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="breadcrumb"><span>Engineering Department Operations Center</span><span class="crumb-separator">/</span><strong id="breadcrumb-current">成本概览</strong></div>
+        <div class="topbar-right">
+          <div class="currency-control">
+            <button id="currency-toggle" class="currency-toggle" type="button" aria-label="切换显示币种，当前为 CNY" title="切换显示币种，当前为 CNY">CNY</button>
+            <span id="currency-rate-label" class="currency-rate-label" aria-live="polite">汇率：1 CNY = 0.114 CHF</span>
+          </div>
+          <button id="global-reset-btn" class="reset-button accent-btn" type="button" title="重置所有筛选条件">↺ 重置筛选</button>
+          <button id="language-toggle" class="reset-button" type="button" aria-label="切换语言">English</button>
+        </div>
+      </header>
+
+      <section class="page-heading">
+        <div class="page-heading-main">
+          <img class="givaudan-logo page-logo" src="./img/Logomark%20black%20CMYK.png" alt="">
+          <div class="page-heading-copy">
+          <p class="eyebrow">ENGINEERING DEPARTMENT OPERATIONS</p>
+          <h1 id="page-title">Maintenance Cost Overview</h1>
+          <p id="page-description">维护成本、预算执行和工单构成</p>
+          </div>
+        </div>
+        <div class="period-chip"><span class="period-dot"></span><span id="period-label">数据期间</span></div>
+      </section>
+
+      <section class="filter-bar" aria-label="报表筛选器">
+        <label class="filter-control"><span>财年</span><select id="year-filter"></select></label>
+        <label class="filter-control"><span>月份</span><select id="month-filter"></select></label>
+        <label class="filter-control"><span>区域</span><select id="scope-filter"></select></label>
+        <label class="filter-control"><span>工单类型</span><select id="type-filter"></select></label>
+        <label class="filter-control"><span>成本要素</span><select id="cost-element-filter"></select></label>
+        <label class="filter-control"><span>订单类型</span><select id="order-type-filter"></select></label>
+        <div id="selection-chip" class="selection-chip" hidden></div>
+      </section>
+
+      <section id="view-overview" class="view-panel" hidden>
+        <div class="kpi-grid overview-kpis">
+          <article class="kpi-card accent-teal"><div class="kpi-label">预算 <span>BUDGET</span></div><div id="kpi-budget" class="kpi-value">—</div><div class="kpi-foot">所选期间预算</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">实际成本 <span>ACTUAL COST</span></div><div id="kpi-actual" class="kpi-value">—</div><div class="kpi-foot">工单实际发生额</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">预算差额 <span>VARIANCE</span></div><div id="kpi-variance" class="kpi-value">—</div><div id="kpi-variance-foot" class="kpi-foot">预算 − 实际</div></article>
+          <article class="kpi-card accent-violet"><div class="kpi-label">PM</div><div id="kpi-pm" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">CM</div><div id="kpi-cm" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">改善 <span>IMPROVEMENT</span></div><div id="kpi-improvement" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-teal"><div class="kpi-label">未交付采购订单 <span>UNGR VALUE</span></div><button class="visual-detail-button" type="button" data-detail-action="ungr" aria-label="查看未交付采购订单明细" title="查看未交付采购订单明细">i</button><div id="kpi-ungr-value" class="kpi-value">—</div></article>
+        </div>
+
+        <div class="chart-grid overview-grid">
+          <article class="card chart-card annual-card">
+            <header class="card-header"><div><h2>年度预算与实际成本</h2></div><span id="annual-chart-unit" class="chart-unit">CNY</span></header>
+            <div id="annual-chart" class="chart chart-tall"></div>
+          </article>
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>月度预算与实际成本</h2></div></header>
+            <div id="trend-chart" class="chart chart-tall"></div>
+          </article>
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>按成本要素的预算与实际成本</h2></div></header>
+            <div id="element-chart" class="chart chart-medium"></div>
+          </article>
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>按工单类型的预算与实际成本</h2></div></header>
+            <div id="type-chart" class="chart chart-medium"></div>
+          </article>
+        </div>
+      </section>
+
+<section id="view-home" class="view-panel"><div class="exp-progress" aria-hidden="true"></div><section class="v3-home-hero"><div class="v3-home-copy"><span class="v3-overline">GIVAUDAN · ENGINEERING OPERATIONS</span><h1 data-zh="工程运营，<br><em>全域洞察。</em>" data-en="Engineering operations.<br><em>Connected insights.</em>" >工程运营，<br><em>全域洞察。</em></h1><h2 data-zh="工程部运营中心" data-en="Engineering Operations Center" >工程部运营中心</h2><p data-zh="连接维护成本、设备可靠性、资本投资与能源管理。<br>选择一个业务模块，直达你需要的分析。" data-en="Connect costs, asset reliability, capital investment and energy.<br>Choose a domain. Find the analysis you need." >连接维护成本、设备可靠性、资本投资与能源管理。<br>选择一个业务模块，直达你需要的分析。</p><a href="#home-modules" class="v3-home-explore"><span data-zh="探索四大模块" data-en="Explore the four domains" >探索四大模块</span><span aria-hidden="true">↓</span></a></div><div class="v3-home-image"><img src="./img/工厂俯视图.jpg" alt="工厂园区俯视图 / Aerial view of the site"><div class="v3-image-caption"><span>ENGINEERING / CONNECTED PERSPECTIVE</span><span>CN18</span></div></div></section><section id="home-modules" class="v3-home-modules"><div class="v3-modules-heading"><div><span class="v3-overline">FOUR DOMAINS. ONE CONNECTED VIEW.</span><h2 data-zh="选择你的业务视角" data-en="Choose your perspective" >选择你的业务视角</h2></div><p data-zh="四大模块 · 十个报表" data-en="Four domains · Ten reports" >四大模块 · 十个报表</p></div><div class="v3-module-grid"><button type="button" class="v3-module" data-route="overview"><span class="v3-module-top"><span>01 / COST</span><span aria-hidden="true">◈</span></span><span class="v3-module-title"><span data-zh="成本管理" data-en="Cost management" >成本管理</span></span><span data-zh="预算与实际、区域成本、支出改善及合同。" data-en="Budgets, actuals, area costs, improvements and contracts." class="v3-module-description">预算与实际、区域成本、支出改善及合同。</span><span class="v3-module-bottom"><span data-zh="4 个报表" data-en="4 reports" >4 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="breakdown"><span class="v3-module-top"><span>02 / MAINTENANCE</span><span aria-hidden="true">⌁</span></span><span class="v3-module-title"><span data-zh="设备与维护" data-en="Asset & maintenance" >设备与维护</span></span><span data-zh="故障停机、工单执行与每日维护计划。" data-en="Downtime, work-order execution and daily maintenance." class="v3-module-description">故障停机、工单执行与每日维护计划。</span><span class="v3-module-bottom"><span data-zh="3 个报表" data-en="3 reports" >3 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="capex"><span class="v3-module-top"><span>03 / CAPEX</span><span aria-hidden="true">▥</span></span><span class="v3-module-title"><span data-zh="资本投资" data-en="Capital investment" >资本投资</span></span><span data-zh="项目预算、资金占用及采购收货计划。" data-en="Project budgets, commitments and goods receipt plans." class="v3-module-description">项目预算、资金占用及采购收货计划。</span><span class="v3-module-bottom"><span data-zh="2 个报表" data-en="2 reports" >2 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button><button type="button" class="v3-module" data-route="energy"><span class="v3-module-top"><span>04 / ENERGY</span><span aria-hidden="true">✳</span></span><span class="v3-module-title"><span data-zh="能源管理" data-en="Energy management" >能源管理</span></span><span data-zh="能源消耗、生产量、单位能耗与费用。" data-en="Energy use, production, intensity and utility costs." class="v3-module-description">能源消耗、生产量、单位能耗与费用。</span><span class="v3-module-bottom"><span data-zh="1 个报表" data-en="1 report" >1 个报表</span><span class="v3-module-arrow" aria-hidden="true">↗</span></span></button></div></section><footer class="v3-home-footer"><span>GIVAUDAN · ENGINEERING INTELLIGENCE</span><span data-zh="企业工作空间 · 授权访问" data-en="Enterprise workspace · Authorized access" >企业工作空间 · 授权访问</span></footer></section>
+
+      <section id="view-area" class="view-panel" hidden>
+        <div class="kpi-grid area-kpis">
+          <article class="kpi-card accent-teal"><div class="kpi-label">预算 <span>BUDGET</span></div><div id="area-kpi-budget" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">实际成本 <span>ACTUAL COST</span></div><div id="area-kpi-actual" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">预算差额 <span>VARIANCE</span></div><div id="area-kpi-variance" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-violet"><div class="kpi-label">PM</div><div id="area-kpi-pm" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">CM</div><div id="area-kpi-cm" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">改善 <span>IMPROVEMENT</span></div><div id="area-kpi-improvement" class="kpi-value">—</div></article>
+        </div>
+        <div class="chart-grid area-dashboard-grid">
+          <article class="card chart-card area-main-chart">
+            <header class="card-header"><div><h2>区域预算与实际成本</h2></div></header>
+            <div id="area-scope-chart" class="chart chart-tall"></div>
+          </article>
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>成本要素预算与实际成本</h2></div></header>
+            <div id="area-element-chart" class="chart chart-tall"></div>
+          </article>
+
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>工单类型预算与实际成本</h2></div></header>
+            <div id="area-type-chart" class="chart chart-tall"></div>
+          </article>
+          <article class="card chart-card area-equipment-card">
+            <header class="card-header equipment-card-header">
+              <div><h2>设备实际成本排名</h2><p>按月度实际成本排序</p></div>
+              <button class="visual-detail-button" type="button" data-detail-action="equipment" aria-label="查看设备信息" title="查看设备信息">i</button>
+              <label class="top-count-control"><span>Top</span><select id="top-equipment-count" aria-label="设备排名数量"><option value="5">5</option><option value="10" selected>10</option><option value="15">15</option></select></label>
+            </header>
+            <div id="area-equipment-table" class="table-wrap"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="view-details" class="view-panel" hidden>
+        <div id="spending-summary" class="chart-grid spending-grid">
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>小额支出实际成本</h2><p>按区域统计</p></div><button class="visual-detail-button" type="button" data-detail-action="small-spending" aria-label="查看小额支出明细" title="查看小额支出明细">i</button></header>
+            <div id="small-spending-area-chart" class="chart chart-tall"></div>
+          </article>
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>小额支出实际成本</h2><p>按成本要素统计</p></div></header>
+            <div id="small-spending-element-chart" class="chart chart-tall"></div>
+          </article>
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>改善实际成本</h2><p>按区域统计</p></div><button class="visual-detail-button" type="button" data-detail-action="improvement" aria-label="查看改善明细" title="查看改善明细">i</button></header>
+            <div id="improvement-area-chart" class="chart chart-tall"></div>
+          </article>
+          <article class="card chart-card">
+            <header class="card-header"><div><h2>改善实际成本</h2><p>按成本要素统计</p></div></header>
+            <div id="improvement-element-chart" class="chart chart-tall"></div>
+          </article>
+        </div>
+        <div id="spending-detail-panel" class="card chart-card detail-table-panel" hidden>
+          <header class="card-header">
+            <div><h2 id="spending-detail-title"></h2><p id="spending-detail-description"></p></div>
+            <button id="spending-detail-back" class="detail-back-button" type="button">←</button>
+          </header>
+          <div id="spending-detail-table" class="table-wrap"></div>
+        </div>
+      </section>
+
+      <section id="view-contracts" class="view-panel" hidden>
+        <div class="chart-grid contract-grid">
+          <article class="card chart-card full-card contract-cost-card">
+            <header class="card-header"><div><h2>合同实际成本</h2><p>按月统计</p></div></header>
+            <div id="contract-cost-chart" class="chart chart-medium"></div>
+          </article>
+          <article class="card chart-card full-card contract-card">
+            <header class="card-header"><div><h2>合同明细</h2></div><input id="contract-search" class="search-input" type="search" placeholder="搜索合同编号或名称..."></header>
+            <div id="contract-table" class="table-wrap"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="view-capex" class="view-panel" hidden>
+        <div class="section-summary"><h2>CAPEX 总览</h2></div>
+        <div class="kpi-grid capex-kpis">
+          <article class="kpi-card accent-teal"><div class="kpi-label">总预算</div><div id="capex-overview-total-budget" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">已批准预算</div><div id="capex-overview-approved-budget" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">尚未占用</div><div id="capex-overview-not-yet-occupied" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-violet"><div class="kpi-label">采购订单金额</div><div id="capex-overview-po-value" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">采购申请金额</div><div id="capex-overview-pr-value" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-teal"><div class="kpi-label">已收货金额</div><div id="capex-overview-gr-value" class="kpi-value">—</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">未收货金额</div><div id="capex-overview-ungr-value" class="kpi-value">—</div></article>
+        </div>
+        <div class="capex-grid">
+          <article class="card chart-card"><header class="card-header"><div><h2>已批准预算</h2></div></header><div id="capex-budget-gauge" class="chart capex-gauge"></div></article>
+          <article class="card chart-card"><header class="card-header"><div><h2>未收货 / 采购申请 / 已收货</h2></div></header><div id="capex-distribution-chart" class="chart capex-distribution"></div></article>
+          <article class="card chart-card capex-project-card"><header class="card-header"><div><h2>各项目未收货、已收货、采购申请与占用</h2><p>按项目</p></div></header><div id="capex-project-chart" class="chart capex-project-chart"></div></article>
+        </div>
+      </section>
+
+      <section id="view-capexPlan" class="view-panel" hidden>
+        <div class="capex-plan-layout">
+          <article class="card chart-card capex-plan-gauge-card">
+            <header class="card-header"><div><h2>未交付采购订单</h2></div></header>
+            <div id="capex-plan-ungr-gauge" class="chart capex-plan-gauge"></div>
+          </article>
+          <article class="card chart-card capex-plan-trend-card">
+            <header class="card-header">
+              <div><h2>已收货金额、未交付累计金额、累计收货金额与预算</h2><p>按月</p></div>
+              <label class="capex-plan-year-control"><span>年份</span><select id="capex-plan-year" aria-label="年份"></select></label>
+            </header>
+            <div id="capex-plan-legend" class="capex-plan-legend"></div>
+            <div id="capex-plan-trend-chart" class="chart capex-plan-trend"></div>
+          </article>
+          <article class="card chart-card capex-plan-table-card">
+            <header class="card-header"><div><h2>GR计划</h2></div></header>
+            <div id="capex-gr-plan-table" class="table-wrap capex-plan-table"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="view-breakdown" class="view-panel" hidden>
+        <div class="section-summary"><h2>设备故障分析</h2><p>故障工单和停机时间来自 Breakdown/Breakdown.xlsx。</p></div>
+        <div class="kpi-grid">
+          <article class="kpi-card accent-teal"><div class="kpi-label">故障记录 <span>EVENTS</span></div><div id="breakdown-count" class="kpi-value">—</div><div class="kpi-foot">源文件记录行数</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">设备数 <span>EQUIPMENT</span></div><div id="breakdown-equipment" class="kpi-value">—</div><div class="kpi-foot">按设备编号去重</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">记录停机时长 <span>DOWNTIME</span></div><div id="breakdown-hours" class="kpi-value">—</div><div class="kpi-foot">生产记录停机时间字段</div></article>
+          <article class="kpi-card accent-violet"><div class="kpi-label">故障工单 <span>WORK ORDERS</span></div><div id="breakdown-orders" class="kpi-value">—</div><div class="kpi-foot">按 Order(IO) 去重</div></article>
+        </div>
+        <div class="chart-grid breakdown-grid">
+          <article class="card chart-card"><header class="card-header"><div><h2>各类型工单业务中断停机时间（MTH）与年累计停机时间</h2><p>按月份</p></div></header><div id="breakdown-trend-chart" class="chart chart-tall"></div></article>
+          <article class="card chart-card"><header class="card-header"><div><h2>各类型工单业务中断停机时间</h2><p>按设备</p></div></header><div id="breakdown-equipment-chart" class="chart chart-tall"></div></article>
+          <article class="card chart-card full-card"><header class="card-header"><div><h2>故障记录清单</h2><p>Breakdown event detail</p></div><input id="breakdown-search" class="search-input" type="search" placeholder="搜索工单、设备或故障描述..."></header><div id="breakdown-table" class="table-wrap"></div></article>
+        </div>
+      </section>
+
+      <section id="view-workOrder" class="view-panel" hidden>
+        <div class="chart-grid work-order-grid">
+          <article class="card chart-card wo-main-card"><header class="card-header"><div><h2>所有工单未完成数及按时完成率</h2><p>Backlog (All), Compl. late (All), Compl. on time (All) and % On time (All) by Month</p></div></header><div id="wo-all-chart" class="chart chart-tall"></div></article>
+          <article class="card chart-card wo-secondary-card"><header class="card-header"><div><h2>关键工单未完成数及按时完成率</h2><p>Backlog (Crit), Compl. late (Crit), Compl. on time (Crit) and % On time (Crit) by Month</p></div></header><div id="wo-critical-chart" class="chart chart-tall"></div></article>
+          <article class="card chart-card wo-secondary-card"><header class="card-header"><div><h2>预防工单未完成数及按时完成率</h2><p>Backlog (Prev), Compl. late (Prev), Compl. on time (Prev) and % On time (Prev) by Month</p></div></header><div id="wo-preventive-chart" class="chart chart-tall"></div></article>
+        </div>
+      </section>
+
+      <section id="view-dailyWO" class="view-panel" hidden>
+        <div class="chart-grid daily-wo-grid">
+          <article class="card chart-card full-card"><header class="card-header"><div><h2>每日维护工单概览</h2><p>按日期和状态显示工单数量与完成率</p></div></header><div id="daily-schedule-chart" class="chart daily-schedule-chart"></div></article>
+          <article class="card chart-card full-card"><header class="card-header"><div><h2>汇总</h2><p>数据来源：工单计划汇总表</p></div></header><div id="daily-schedule-table" class="table-wrap daily-summary-table"></div></article>
+        </div>
+      </section>
+
+      <section id="view-energy" class="view-panel" hidden>
+        <div class="section-summary"><h2>能源使用</h2><p>Utility use, production volume and energy intensity from the uploaded local workbooks.</p></div>
+        <div class="kpi-grid">
+          <article class="kpi-card accent-teal"><div class="kpi-label">蒸汽 <span>STEAM</span></div><div id="energy-steam" class="kpi-value">—</div><div class="kpi-foot">筛选期间汇总</div></article>
+          <article class="kpi-card accent-blue"><div class="kpi-label">电力 <span>POWER</span></div><div id="energy-power" class="kpi-value">—</div><div class="kpi-foot">Power/kwh meter</div></article>
+          <article class="kpi-card accent-gold"><div class="kpi-label">天然气 <span>NATURAL GAS</span></div><div id="energy-gas" class="kpi-value">—</div><div class="kpi-foot">Head meter</div></article>
+          <article class="kpi-card accent-violet"><div class="kpi-label">生产量 <span>PRODUCTION</span></div><div id="energy-production" class="kpi-value">—</div><div class="kpi-foot">CN18 Production Volume</div></article>
+        </div>
+        <div class="chart-grid energy-chart-grid">
+          <article class="card chart-card full-card energy-chart-card"><header class="card-header"><div><h2>Power/kwh</h2><p>by Month and Year</p></div></header><div id="energy-power-chart" class="chart energy-combo-chart"></div></article>
+          <article class="card chart-card full-card energy-chart-card"><header class="card-header"><div><h2>Natural Gas/m3</h2><p>by Month and Year</p></div></header><div id="energy-gas-chart" class="chart energy-combo-chart"></div></article>
+          <article class="card chart-card full-card energy-chart-card"><header class="card-header"><div><h2>Steam/ton</h2><p>by Month and Year</p></div></header><div id="energy-steam-chart" class="chart energy-combo-chart"></div></article>
+          <article class="card chart-card full-card energy-chart-card"><header class="card-header"><div><h2>Nitrogen/t</h2><p>by Month and Year</p></div></header><div id="energy-nitrogen-chart" class="chart energy-combo-chart"></div></article>
+          <hr class="energy-section-divider">
+          <article class="card chart-card full-card energy-chart-card energy-water-card"><header class="card-header"><div><h2>City water/m3</h2><p>by Month and Year</p></div></header><div id="energy-city-water-chart" class="chart energy-combo-chart"></div></article>
+          <article class="card chart-card full-card energy-chart-card"><header class="card-header"><div><h2>Domestic waste water/t</h2><p>by Month and Year</p></div></header><div id="energy-domestic-wastewater-chart" class="chart energy-combo-chart"></div></article>
+          <article class="card chart-card full-card energy-chart-card"><header class="card-header"><div><h2>Industry waste water/t</h2><p>by Month and Year</p></div></header><div id="energy-industry-wastewater-chart" class="chart energy-combo-chart"></div></article>
+        </div>
+      </section>
+      <dialog id="detail-dialog" class="detail-dialog">
+        <div class="detail-dialog-header">
+          <h2 id="detail-dialog-title"></h2>
+          <button id="detail-dialog-close" type="button" class="dialog-close" aria-label="Close">×</button>
+        </div>
+        <div id="detail-dialog-content" class="detail-dialog-content"></div>
+      </dialog>
+      <div id="chart-tooltip" class="chart-tooltip" role="tooltip" hidden></div>
+      <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+    </main>
+  </div>
+</body>
+</html>

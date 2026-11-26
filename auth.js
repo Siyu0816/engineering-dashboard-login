@@ -152,24 +152,24 @@
         if (error) throw error;
         /* 新增开始 */
 
-        if (data.user) {
+        // if (data.user) {
 
-          const result = await client
-            .from('users')
-            .insert({
-              id: data.user.id,
-              email: $('email').value.trim(),
-              full_name: $('full-name').value.trim(),
-              department: $('department').value.trim(),
-              role: 'member',
-              status: 'pending'
-            });
+        //   const result = await client
+        //     .from('users')
+        //     .insert({
+        //       id: data.user.id,
+        //       email: $('email').value.trim(),
+        //       full_name: $('full-name').value.trim(),
+        //       department: $('department').value.trim(),
+        //       role: 'member',
+        //       status: 'pending'
+        //     });
 
-          console.log(
-              'USER INSERT RESULT:',
-              result
-          );
-        }
+        //   console.log(
+        //       'USER INSERT RESULT:',
+        //       result
+        //   );
+        // }
 
         /* 新增结束 */
         if (data.session) {
