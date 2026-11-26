@@ -179,10 +179,18 @@
 
   check().catch(() => {});
   addEventListener('pageshow', event => {
-    if (event.persisted) check().catch(() => {});
+    if (event.persisted) 
+      // check().catch(() => {});
+      check().catch(error => {
+          console.error(error);
+      });
   });
   addEventListener('focus', () => {
-    if (Date.now() - lastChecked > 10000) check().catch(() => {});
+    if (Date.now() - lastChecked > 10000) 
+      // check().catch(() => {});
+      check().catch(error => {
+          console.error(error);
+      });
   });
   document.addEventListener('click', event => {
     if (!event.target.closest('.enterprise-account')) {
