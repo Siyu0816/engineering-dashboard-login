@@ -177,7 +177,10 @@
     return;
   }
 
-  check().catch(() => {});
+  // check().catch(() => {});
+  check().catch(error => {
+      console.error('AUTH ERROR:', error);
+  });
   addEventListener('pageshow', event => {
     if (event.persisted) 
       // check().catch(() => {});
