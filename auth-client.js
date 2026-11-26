@@ -20,6 +20,33 @@
         redirect();
         throw new Error('请先登录。');
       }
+      const { data: profile } = await window.sb
+          .from('users')
+          .select('*')
+          .eq('id', data.user.id)
+          .single();
+
+        if (!profile) {
+
+          await window.sb.auth.signOut();
+
+          redirect();
+
+          throw new Error('用户信息不存在');
+        }
+
+        if (profile.status !== 'approved') {
+
+          await window.sb.auth.signOut();
+
+          alert(
+            '账号尚未通过管理员审批。'
+          );
+
+          redirect();
+
+          throw new Error('等待审批');
+        }
 
       const metadata = data.user.user_metadata || {};
       current = {

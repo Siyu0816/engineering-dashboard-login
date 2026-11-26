@@ -1,8 +1,8 @@
 @echo off
 
-set LOG=C:\Users\bais\Documents\GitHub\engineering-dashboard\auto_update.log
+set LOG=C:\Users\bais\Documents\GitHub\engineering-dashboard-login\auto_update.log
 
-cd /d "C:\Users\bais\Documents\GitHub\engineering-dashboard"
+cd /d "C:\Users\bais\Documents\GitHub\engineering-dashboard-login"
 
 echo ======================================== >> "%LOG%"
 echo %date% %time% >> "%LOG%"

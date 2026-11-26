@@ -150,6 +150,24 @@
           }
         });
         if (error) throw error;
+        /* 新增开始 */
+
+        if (data.user) {
+
+          await client
+            .from('users')
+            .insert({
+              id: data.user.id,
+              email: $('email').value.trim(),
+              full_name: $('full-name').value.trim(),
+              department: $('department').value.trim(),
+              role: 'member',
+              status: 'pending'
+            });
+
+        }
+
+        /* 新增结束 */
         if (data.session) {
           location.replace('./index.html');
           return;
