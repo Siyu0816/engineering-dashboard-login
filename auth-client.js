@@ -15,7 +15,7 @@
     inflight = (async () => {
       if (!window.sb) throw new Error('Supabase 尚未初始化，请检查项目配置。');
       const { data, error } = await window.sb.auth.getUser();
-      if (error) throw error;
+      // if (error) throw error;
       if (!data.user) {
         redirect();
         throw new Error('请先登录。');
